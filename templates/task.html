@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+      <h5 class="card-title mb-0">{{ app_name }}</h5>
+      <div class="d-flex gap-2 align-items-center">
+        <span class="badge text-bg-primary">Session {{ trial_number }} of {{ sessions_per_app }}</span>
+        <span class="badge text-bg-secondary">Task {{ idx + 1 }} of {{ total }}</span>
+      </div>
+    </div>
+    <p class="lead">{{ task_text }}</p>
+
+    <form id="taskForm" method="POST">
+      <input type="hidden" name="duration_seconds" id="duration_seconds" value="0">
+      <input type="hidden" name="errors_count" id="errors_count" value="0">
+      <input type="hidden" name="help_count" id="help_count" value="0">
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <button class="btn btn-outline-primary" type="button" id="startBtn">Start</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-outline-danger" type="button" id="finishBtn" disabled>Finish</button>
+        </div>
+        <div class="col-auto">
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-danger" type="button" id="errorPlus">Errors +</button>
+            <span class="btn btn-light disabled" id="errorsDisplay">0</span>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary" type="button" id="helpPlus">Help +</button>
+            <span class="btn btn-light disabled" id="helpDisplay">0</span>
+          </div>
+        </div>
+        <div class="col-auto">
+          <span class="badge text-bg-info" id="timerBadge">00:00</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="mt-2">
+        <label class="form-label fw-bold">Task difficulty</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="easy" id="easyYes" value="easy">
+          <label class="form-check-label" for="easyYes">Easy</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="easy" id="easyNo" value="not_easy">
+          <label class="form-check-label" for="easyNo">Not Easy</label>
+        </div>
+      </div>
+
+      <div class="mt-4 d-flex gap-2">
+        <button class="btn btn-primary" type="submit" id="submitBtn" disabled>Submit & Next</button>
+        <a class="btn btn-outline-secondary btn-mainmenu" href="{{ url_for('choose_app') }}">Main menu</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

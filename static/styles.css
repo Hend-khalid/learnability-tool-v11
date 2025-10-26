@@ -1,0 +1,14 @@
+body { background: #f7f7fb; }
+.card { border: none; }
+.badge { font-size: 1rem; }
+
+/* Main menu button: black text, bold, clear hover */
+.btn-mainmenu {
+  color: #000 !important;
+  font-weight: 700;
+  border-color: #6c757d !important;
+}
+.btn-mainmenu:hover {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}

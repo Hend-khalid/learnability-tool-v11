@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title mb-3">Participant Details</h4>
+        <form method="POST">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Name (required)</label>
+              <input class="form-control" name="user_name" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Gender (required)</label>
+              <select class="form-select" name="gender" required>
+                <option value="" selected disabled>— Select —</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Age group (required)</label>
+              <select class="form-select" name="age_group" required>
+<option value="" selected disabled>— Select —</option>
+<option>20–29</option>
+<option>30–39</option>
+<option>40+</option>
+</select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Major / Specialization (required)</label>
+              <input class="form-control" name="major" required>
+            </div>
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-primary">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="mb-3">Instructions</h4>
+        <div class="alert alert-warning" role="alert">
+          <strong>Tip:</strong> For the best experience and to access all features of the application, please <strong>sign up or log in</strong> before starting the tasks.
+        </div>
+        <ol class="mb-3">
+          <li>Download the target application using the link on the next page.</li>
+          <li>When a task appears, press <strong>Start</strong> before you begin.</li>
+          <li>After you finish the task, press <strong>Finish</strong> to stop the timer.</li>
+          <li>Press <strong>Errors +</strong> whenever you believe you made a mistake (even if you're not 100% sure).</li>
+          <li>Press <strong>Help +</strong> whenever you feel you need help. Continue the test—no one will assist you; we only count the number of times you asked for help.</li>
+          <li>Finally, select whether the task was <strong>Easy</strong> or <strong>Not Easy</strong>, then submit.</li>
+        </ol>
+        <div class="alert alert-info" role="alert">
+          <strong>Note:</strong> After completing all tasks for the first session, you will automatically repeat the same tasks for a <strong>second session</strong>. This helps us measure how your performance improves when repeating the tasks.
+        </div>
+        <p class="text-muted mb-0"><strong>Reminder:</strong> Start → do the task → Finish → choose difficulty → Submit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

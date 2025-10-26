@@ -1,0 +1,50 @@
+{
+  "StarUML": [
+    "Open a new project in StarUML",
+    "Create a new Use Case Diagram in the project",
+    "Add one Actor to the Use Case Diagram",
+    "Add one Use Case and connect it to the Actor",
+    "Rename the elements (Actor and Use Case) with meaningful names",
+    "Add multiple Actors (e.g., User and Administrator)",
+    "Add include/extend relationships between Use Cases",
+    "Create a new Class Diagram in the same project",
+    "Add a Class with attributes and methods",
+    "Add an Association relationship between two Classes",
+    "Add a Generalization (Inheritance) relationship between two Classes",
+    "Create a new Sequence Diagram and add it to the project",
+    "Represent a message exchange (Message Passing) between two objects in the Sequence Diagram",
+    "Export the project as XMI or PDF and save it"
+  ],
+  "OneNote": [
+    "Create a new notebook titled 'Research_Project_2025'.",
+    "Add a section called 'Meeting_Notes.'",
+    "Create a page named 'Project_Planning.'",
+    "Type a meeting highlight points.",
+    "Apply bold formatting to highlight key points.",
+    "Create a to-do list for tasks assigned to team members and mark one as important.",
+    "Insert a project logo.",
+    "Attach a reference PDF file for background reading.",
+    "Use the search function to find a specific keyword in your notes.",
+    "Move the page ' Project_Planning ' to a new section called 'Research_Findings.'",
+    "Share the notebook with a teammate via email.",
+    "Translate a sentence from English to another language (for multilingual collaboration).",
+    "Run a spell check to ensure the notes are error-free.",
+    "Export the Project_Planning notes as a PDF file to distribute to stakeholders."
+  ],
+  "Wiki-Edit": [
+    "Open the article in Edit mode",
+    "Add a new line of text",
+    "Make a word bold",
+    "Make a word italic",
+    "Insert an internal link to another article",
+    "Insert an external link to a website",
+    "Create a bulleted list with 3 items",
+    "Add a sub-heading",
+    "Write an edit summary before saving",
+    "Insert an image into the article",
+    "Add a table (2 rows × 2 columns)",
+    "Insert a template (e.g., {{Citation needed}})",
+    "Use the Preview option",
+    "Publish (save) the changes"
+  ]
+}
