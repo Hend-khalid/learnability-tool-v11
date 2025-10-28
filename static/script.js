@@ -21,18 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const errorsField = document.getElementById("errors_count");
   const helpField = document.getElementById("help_count");
 
-  // الحالة الابتدائية للأزرار
+  const easyRadios = document.querySelectorAll('input[name="easy"]');
+
+  // 🚫 أولاً: عطّل كل الأزرار في البداية
   if (finishBtn) finishBtn.disabled = true;
   if (errorPlus) errorPlus.disabled = true;
   if (helpPlus) helpPlus.disabled = true;
-  // زر الإرسال قد يكون مفعّل إذا enable_submit=True من السيرفر
+  if (submitBtn) submitBtn.disabled = true;
 
-  // عند الضغط على زر البدء
+  // ▶️ زر البدء
   if (startBtn) {
     startBtn.addEventListener("click", () => {
       if (timer) return;
       startBtn.disabled = true;
 
+      // فعّل الأزرار بعد الضغط على "Start"
       if (finishBtn) finishBtn.disabled = false;
       if (errorPlus) errorPlus.disabled = false;
       if (helpPlus) helpPlus.disabled = false;
@@ -45,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // عند الضغط على زر الإنهاء
+  // ⏹️ زر الإنهاء
   if (finishBtn) {
     finishBtn.addEventListener("click", () => {
       if (timer) {
@@ -57,11 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
       finishBtn.disabled = true;
       if (errorPlus) errorPlus.disabled = true;
       if (helpPlus) helpPlus.disabled = true;
-      if (submitBtn) submitBtn.disabled = false; // تفعيل الإرسال بعد الإنهاء
+
+      // 🔒 زر الإرسال يبقى معطّل حتى المستخدم يختار Easy أو Not Easy
+      if (submitBtn) submitBtn.disabled = true;
     });
   }
 
-  // زر الأخطاء
+  // ➕ عداد الأخطاء
   if (errorPlus) {
     errorPlus.addEventListener("click", () => {
       const v = parseInt(errorsDisplay.textContent || "0") + 1;
@@ -70,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // زر المساعدة
+  // 💬 عداد المساعدة
   if (helpPlus) {
     helpPlus.addEventListener("click", () => {
       const v = parseInt(helpDisplay.textContent || "0") + 1;
@@ -79,20 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ✅ تحقق العميل (client-side) فقط في صفحات المهام
-  const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      // إذا ما فيه خيارات easy → يعني مو صفحة المهام
-      const radios = document.querySelectorAll('input[name="easy"]');
-      if (radios.length === 0) return; // تجاهل التحقق
-
-      const picked = document.querySelector('input[name="easy"]:checked');
-      if (!picked) {
-        e.preventDefault();
-        alert("Please select whether the task was easy or not.");
-        if (submitBtn) submitBtn.disabled = false;
-      }
+  // ✅ تفعيل زر الإرسال فقط بعد اختيار Easy أو Not Easy
+  easyRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      if (submitBtn) submitBtn.disabled = false;
     });
-  }
+  });
 });
