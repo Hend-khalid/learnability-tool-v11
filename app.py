@@ -98,6 +98,7 @@ def task(idx):
 def thanks():
     return render_template("thanks.html")
 
+
     # ✅ إذا أنهى المستخدم جميع التطبيقات وكل الجلسات
 if app_index == len(apps_list) - 1 and trial_number == sessions_per_app:
     return redirect(url_for("thanks"))
