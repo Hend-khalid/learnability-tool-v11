@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow-sm">
+  <div class="card-body text-center">
+    <h4 class="mb-3">🎉 Thank You!</h4>
+    <p class="text-muted mb-4">
+      You’ve successfully completed all sessions for all three applications.<br>
+      Your responses have been recorded successfully.
+    </p>
+    <a class="btn btn-primary" href="{{ url_for('home') }}">Finish</a>
+  </div>
+</div>
+{% endblock %}
