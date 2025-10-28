@@ -226,6 +226,15 @@ def thanks():
         return redirect(url_for("home"))
     return render_template("thanks.html")
 
+from flask import send_file
+import shutil
+
+@app.route("/download-data")
+def download_data():
+    # ضغط مجلد البيانات إلى ملف ZIP مؤقت
+    zip_filename = "data_backup.zip"
+    shutil.make_archive("data_backup", 'zip', DATA_DIR)
+    return send_file(zip_filename, as_attachment=True)
 
 def main():
     parser = argparse.ArgumentParser()
