@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="card shadow-sm">
-  <div class="card-body text-center">
-    <h4 class="mb-3">🎉 Thank You!</h4>
-    <p class="text-muted mb-4">
-      You’ve successfully completed all sessions for all three applications.<br>
-      Your responses have been recorded successfully.
-    </p>
-    <a class="btn btn-primary" href="{{ url_for('home') }}">Finish</a>
-  </div>
+<div class="card shadow-sm text-center p-4">
+  <h4 class="mb-3">🎉 Thank You!</h4>
+  <p class="text-muted mb-4">
+    You’ve successfully completed all sessions for all selected applications.
+  </p>
+  <a class="btn btn-success"
+     href="https://app.prolific.com/submissions/complete?cc=C10Z0HAG">
+     Click here to finish the study
+  </a>
 </div>
 {% endblock %}
+
