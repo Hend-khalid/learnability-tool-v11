@@ -148,7 +148,7 @@ def task(idx):
                                    task_text=tasks[idx],
                                    trial_number=session.get("trial_number", 1),
                                    sessions_per_app=SESSIONS_PER_APP)
-
+                                    enable_submit=True)
         easy_binary = 1 if easy == "easy" else 0
         trial_number = session.get("trial_number", 1)
 
