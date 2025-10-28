@@ -60,22 +60,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const submitBtn = document.getElementById("submitBtn");
-  if (!form || !submitBtn) return;
-
-  form.addEventListener("submit", function (e) {
-     Easy/Not Easy
-    const chosen = document.querySelector('input[name="easy"]:checked');
-    if (!chosen) {
-      e.preventDefault();
-      alert("Please select whether the task was easy or not.");
-      submitBtn.disabled = false;
-      return;
-    }
-  });
-});
 
 
 
