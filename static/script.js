@@ -1,11 +1,13 @@
 let timer = null;
 let elapsed = 0;
-function fmt(sec){
+
+function fmt(sec) {
   const m = Math.floor(sec / 60);
   const s = sec % 60;
-  return (m<10?"0"+m:m) + ":" + (s<10?"0"+s:s);
+  return (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
 }
-document.addEventListener("DOMContentLoaded", ()=>{
+
+document.addEventListener("DOMContentLoaded", () => {
   const startBtn = document.getElementById("startBtn");
   const finishBtn = document.getElementById("finishBtn");
   const timerBadge = document.getElementById("timerBadge");
@@ -19,64 +21,61 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const errorsField = document.getElementById("errors_count");
   const helpField = document.getElementById("help_count");
 
-  if(startBtn){
-    startBtn.addEventListener("click", ()=>{
-      if(timer){ return; }
+  // 🔹 عطّل الأزرار في البداية
+  if (finishBtn) finishBtn.disabled = true;
+  if (errorPlus) errorPlus.disabled = true;
+  if (helpPlus) helpPlus.disabled = true;
+  if (submitBtn) submitBtn.disabled = true;
+
+  // 🔹 عند الضغط على زر البدء
+  if (startBtn) {
+    startBtn.addEventListener("click", () => {
+      if (timer) return;
+
       startBtn.disabled = true;
       finishBtn.disabled = false;
+      errorPlus.disabled = false;
+      helpPlus.disabled = false;
+
       elapsed = 0;
-      timer = setInterval(()=>{
+      timer = setInterval(() => {
         elapsed += 1;
-        timerBadge.textContent = fmt(elapsed);
+        if (timerBadge) timerBadge.textContent = fmt(elapsed);
       }, 1000);
     });
   }
-  if(finishBtn){
-    finishBtn.addEventListener("click", ()=>{
-      if(timer){
+
+  // 🔹 عند الضغط على زر الإنهاء
+  if (finishBtn) {
+    finishBtn.addEventListener("click", () => {
+      if (timer) {
         clearInterval(timer);
         timer = null;
-        durationField.value = String(elapsed);
-        submitBtn.disabled = false;
-        finishBtn.disabled = true;
+        if (durationField) durationField.value = String(elapsed);
       }
+
+      finishBtn.disabled = true;
+      errorPlus.disabled = true;
+      helpPlus.disabled = true;
+      submitBtn.disabled = false; // ← فعّل زر Submit بعد الانتهاء
     });
   }
-  if(errorPlus){
-    errorPlus.addEventListener("click", ()=>{
+
+  // 🔹 زر الأخطاء
+  if (errorPlus) {
+    errorPlus.addEventListener("click", () => {
       const v = parseInt(errorsDisplay.textContent || "0") + 1;
       errorsDisplay.textContent = String(v);
       errorsField.value = String(v);
     });
   }
-  if(helpPlus){
-    helpPlus.addEventListener("click", ()=>{
+
+  // 🔹 زر المساعدة
+  if (helpPlus) {
+    helpPlus.addEventListener("click", () => {
       const v = parseInt(helpDisplay.textContent || "0") + 1;
       helpDisplay.textContent = String(v);
       helpField.value = String(v);
     });
   }
 });
-
-
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const submitBtn = document.getElementById("submitBtn");
-  if (!form || !submitBtn) return;
-
-  form.addEventListener("submit", function (e) {
-    const picked = document.querySelector('input[name="easy"]:checked');
-    if (!picked) {
-      e.preventDefault();                    // امنعي الإرسال
-      alert("Please select whether the task was easy or not.");
-      submitBtn.disabled = false;            // رجّعي تفعيل الزر
-    }
-  });
-});
-
