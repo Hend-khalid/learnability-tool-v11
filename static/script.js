@@ -1,7 +1,5 @@
 let timer = null;
 let elapsed = 0;
-
-// حالات منطقية لتتبع التسلسل المطلوب
 let hasStarted = false;
 let hasFinished = false;
 
@@ -12,6 +10,10 @@ function fmt(sec) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // ✅ نتأكد أولاً إننا في صفحة فيها تقييم للمهمة
+  const taskForm = document.querySelector("#taskForm");
+  if (!taskForm) return; // <-- لو مو صفحة المهام، لا نسوي أي شيء
+
   const startBtn      = document.getElementById("startBtn");
   const finishBtn     = document.getElementById("finishBtn");
   const timerBadge    = document.getElementById("timerBadge");
@@ -27,37 +29,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const easyRadios    = document.querySelectorAll('input[name="easy"]');
 
-  // دالة داخلية لتحديث حالة زر الإرسال حسب الشروط
+  // تحديث حالة زر الإرسال بناء على الشروط
   function updateSubmitState() {
-    // لازم: بدأ ثم أنهى ثم اختار نوع المهمة
     const picked = document.querySelector('input[name="easy"]:checked');
     const canSubmit = hasStarted && hasFinished && !!picked;
     if (submitBtn) submitBtn.disabled = !canSubmit;
   }
 
-  // الحالة الابتدائية: كل الأزرار معطلة ما عدا Start
+  // الحالة الابتدائية
   if (finishBtn) finishBtn.disabled = true;
   if (errorPlus) errorPlus.disabled = true;
   if (helpPlus)  helpPlus.disabled  = true;
   if (submitBtn) submitBtn.disabled = true;
+
   hasStarted = false;
   hasFinished = false;
 
-  // Start
+  // زر البدء
   if (startBtn) {
     startBtn.addEventListener("click", () => {
       if (timer) return;
       startBtn.disabled = true;
 
-      // فعّل باقي الأدوات
       if (finishBtn) finishBtn.disabled = false;
       if (errorPlus) errorPlus.disabled = false;
       if (helpPlus)  helpPlus.disabled  = false;
 
-      // وضع البدء
       hasStarted = true;
       hasFinished = false;
-      updateSubmitState(); // يبقى معطل لأن ما أنهى بعد
+      updateSubmitState();
 
       elapsed = 0;
       timer = setInterval(() => {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Finish
+  // زر الإنهاء
   if (finishBtn) {
     finishBtn.addEventListener("click", () => {
       if (timer) {
@@ -76,15 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (durationField) durationField.value = String(elapsed);
       }
 
-      // عطّل أدوات العداد
       finishBtn.disabled = true;
       if (errorPlus) errorPlus.disabled = true;
       if (helpPlus)  helpPlus.disabled  = true;
 
-      // وضع الإنهاء
       hasFinished = true;
-
-      // بعد الإنهاء: لا تفعل الإرسال إلا إذا اختير نوع المهمة
       updateSubmitState();
     });
   }
@@ -107,24 +103,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // تفعيل الإرسال فقط إذا (بعد الإنهاء) اختير Easy/Not Easy
+  // تفعيل الإرسال فقط بعد اكتمال الشروط
   easyRadios.forEach(radio => {
-    radio.addEventListener("change", () => {
-      updateSubmitState();
-    });
+    radio.addEventListener("change", () => updateSubmitState());
   });
 
-  // حارس إضافي: حتى لو حاول يرسل بدون استيفاء الشروط (مثلاً من DevTools)، نمنع الإرسال بصمت
-  const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      const picked = document.querySelector('input[name="easy"]:checked');
-      const canSubmit = hasStarted && hasFinished && !!picked;
-      if (!canSubmit) {
-        e.preventDefault();
-        // ما في alert — فقط نمنع الإرسال ونضمن بقاء الزر معطّل
-        updateSubmitState();
-      }
-    });
-  }
+  // تأكيد إضافي لمنع الإرسال من المطور أو بدونه
+  taskForm.addEventListener("submit", (e) => {
+    const picked = document.querySelector('input[name="easy"]:checked');
+    const canSubmit = hasStarted && hasFinished && !!picked;
+    if (!canSubmit) {
+      e.preventDefault();
+      updateSubmitState();
+    }
+  });
 });
