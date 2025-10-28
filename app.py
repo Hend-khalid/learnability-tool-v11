@@ -138,17 +138,19 @@ def task(idx):
         except:
             help_count_int = 0
 
-        # تحقق صعوبة المهمة
-        if easy not in ["easy", "not_easy"]:
+                if easy not in ["easy", "not_easy"]:
             flash("Please select Easy or Not Easy before submitting.", "warning")
-            return render_template("task.html",
-                                   app_name=app_name,
-                                   idx=idx,
-                                   total=len(tasks),
-                                   task_text=tasks[idx],
-                                   trial_number=session.get("trial_number", 1),
-                                   sessions_per_app=SESSIONS_PER_APP)
-                                    enable_submit=True)
+            return render_template(
+                "task.html",
+                app_name=app_name,
+                idx=idx,
+                total=len(tasks),
+                task_text=tasks[idx],
+                trial_number=session.get("trial_number", 1),
+                sessions_per_app=SESSIONS_PER_APP,
+                enable_submit=True  
+            )
+
         easy_binary = 1 if easy == "easy" else 0
         trial_number = session.get("trial_number", 1)
 
