@@ -10,9 +10,9 @@ function fmt(sec) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ✅ نتأكد أولاً إننا في صفحة فيها تقييم للمهمة
+  // ✅ نتحقق أننا داخل صفحة المهام فقط
   const taskForm = document.querySelector("#taskForm");
-  if (!taskForm) return; // <-- لو مو صفحة المهام، لا نسوي أي شيء
+  if (!taskForm) return;
 
   const startBtn      = document.getElementById("startBtn");
   const finishBtn     = document.getElementById("finishBtn");
@@ -29,23 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const easyRadios    = document.querySelectorAll('input[name="easy"]');
 
-  // تحديث حالة زر الإرسال بناء على الشروط
+  // 🧩 دالة للتحكم في تفعيل زر الإرسال
   function updateSubmitState() {
     const picked = document.querySelector('input[name="easy"]:checked');
     const canSubmit = hasStarted && hasFinished && !!picked;
     if (submitBtn) submitBtn.disabled = !canSubmit;
   }
 
-  // الحالة الابتدائية
+  // 🚫 الحالة الابتدائية: كل شيء معطّل ما عدا زر البدء
   if (finishBtn) finishBtn.disabled = true;
   if (errorPlus) errorPlus.disabled = true;
   if (helpPlus)  helpPlus.disabled  = true;
   if (submitBtn) submitBtn.disabled = true;
+  // 🔒 تعطيل الاختيارات (سهلة / غير سهلة) في البداية
+  easyRadios.forEach(r => r.disabled = true);
 
   hasStarted = false;
   hasFinished = false;
 
-  // زر البدء
+  // ▶️ عند الضغط على "Start"
   if (startBtn) {
     startBtn.addEventListener("click", () => {
       if (timer) return;
@@ -67,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // زر الإنهاء
+  // ⏹️ عند الضغط على "Finish"
   if (finishBtn) {
     finishBtn.addEventListener("click", () => {
       if (timer) {
@@ -81,11 +83,23 @@ document.addEventListener("DOMContentLoaded", () => {
       if (helpPlus)  helpPlus.disabled  = true;
 
       hasFinished = true;
+
+      // ✅ الآن نفعل اختيار "سهلة / غير سهلة"
+      easyRadios.forEach(r => r.disabled = false);
+
+      // يبقى زر الإرسال معطل حتى يختار أحد الخيارين
       updateSubmitState();
     });
   }
 
-  // عداد الأخطاء
+  // ⚙️ عند اختيار "Easy / Not Easy" بعد الإنهاء
+  easyRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      updateSubmitState();
+    });
+  });
+
+  // ➕ عداد الأخطاء
   if (errorPlus) {
     errorPlus.addEventListener("click", () => {
       const v = parseInt(errorsDisplay.textContent || "0") + 1;
@@ -94,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // عداد المساعدة
+  // ➕ عداد المساعدة
   if (helpPlus) {
     helpPlus.addEventListener("click", () => {
       const v = parseInt(helpDisplay.textContent || "0") + 1;
@@ -103,12 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // تفعيل الإرسال فقط بعد اكتمال الشروط
-  easyRadios.forEach(radio => {
-    radio.addEventListener("change", () => updateSubmitState());
-  });
-
-  // تأكيد إضافي لمنع الإرسال من المطور أو بدونه
+  // 🚫 حماية إضافية من الإرسال قبل الشروط
   taskForm.addEventListener("submit", (e) => {
     const picked = document.querySelector('input[name="easy"]:checked');
     const canSubmit = hasStarted && hasFinished && !!picked;
