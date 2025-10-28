@@ -91,9 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!chosen) {
       e.preventDefault();
       alert("Please select whether the task was easy or not.");
-      submitBtn.disabled = false;
-      return;
+      submitBtn.disabled = false; // يعيد تفعيل الزر بعد التنبيه
     }
   });
 });
-
