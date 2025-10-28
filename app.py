@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from datetime import datetime
 import csv, os, json, uuid, argparse
+from flask import send_file
+import shutil
 
 SESSIONS_PER_APP = 2
 
@@ -226,12 +228,9 @@ def thanks():
         return redirect(url_for("home"))
     return render_template("thanks.html")
 
-from flask import send_file
-import shutil
-
 @app.route("/download-data")
 def download_data():
-    # ضغط مجلد البيانات إلى ملف ZIP مؤقت
+    # يضغط كامل مجلد data/ إلى ملف ZIP مؤقت باسم data_backup.zip
     zip_filename = "data_backup.zip"
     shutil.make_archive("data_backup", 'zip', DATA_DIR)
     return send_file(zip_filename, as_attachment=True)
