@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% set enable_submit = enable_submit|default(false) %}
 {% block content %}
 <div class="card shadow-sm">
   <div class="card-body">
@@ -13,22 +14,17 @@
     <p class="lead">{{ task_text }}</p>
 
     <form id="taskForm" method="POST">
-      <!-- hidden fields -->
       <input type="hidden" name="duration_seconds" id="duration_seconds" value="0">
       <input type="hidden" name="errors_count" id="errors_count" value="0">
       <input type="hidden" name="help_count" id="help_count" value="0">
 
-      <!-- Controls row (IDs فريدة ونسخة واحدة فقط) -->
       <div class="row g-3 align-items-center">
         <div class="col-auto">
           <div class="d-flex align-items-center gap-2 mb-3">
-
-            <!-- Timer controls -->
             <button class="btn btn-outline-primary" type="button" id="startBtn">Start</button>
             <button class="btn btn-outline-secondary" type="button" id="finishBtn" disabled>Finish</button>
             <span id="timerBadge" class="badge bg-dark">00:00</span>
 
-            <!-- Counters -->
             <div class="ms-3 btn-group" role="group">
               <button class="btn btn-outline-danger" type="button" id="errorPlus" disabled>Errors +</button>
               <span class="btn btn-light disabled" id="errorsDisplay">0</span>
@@ -38,14 +34,12 @@
               <button class="btn btn-outline-primary" type="button" id="helpPlus" disabled>Help +</button>
               <span class="btn btn-light disabled" id="helpDisplay">0</span>
             </div>
-
           </div>
         </div>
       </div>
 
       <hr>
 
-      <!-- Difficulty -->
       <div class="mt-2">
         <label class="form-label fw-bold">Task difficulty</label>
         <div class="form-check">
@@ -58,9 +52,10 @@
         </div>
       </div>
 
-      <!-- Actions -->
       <div class="mt-4 d-flex gap-2">
-        <button class="btn btn-primary" type="submit" id="submitBtn" disabled>Submit & Next</button>
+        <button class="btn btn-primary" type="submit" id="submitBtn" {% if not enable_submit %}disabled{% endif %}>
+          Submit & Next
+        </button>
         <a class="btn btn-outline-secondary btn-mainmenu" href="{{ url_for('choose_app') }}">Main menu</a>
       </div>
     </form>
