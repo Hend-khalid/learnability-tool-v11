@@ -95,6 +95,15 @@ def task(idx):
         flash("You have completed all tasks for this application.", "success")
         return redirect(url_for("choose_app"))
 
+
+    @app.route("/thanks")
+def thanks():
+    return render_template("thanks.html")
+
+    # ✅ إذا أنهى المستخدم جميع التطبيقات وكل الجلسات
+if app_index == len(apps_list) - 1 and trial_number == sessions_per_app:
+    return redirect(url_for("thanks"))
+
     if request.method == "POST":
         duration = request.form.get("duration_seconds", "0").strip()
         errors = request.form.get("errors_count", "0").strip()
