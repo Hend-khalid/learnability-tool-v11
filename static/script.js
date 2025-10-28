@@ -87,11 +87,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!form || !submitBtn) return;
 
   form.addEventListener("submit", function (e) {
-    const chosen = document.querySelector('input[name="easy"]:checked');
-    if (!chosen) {
-      e.preventDefault();
+    const picked = document.querySelector('input[name="easy"]:checked');
+    if (!picked) {
+      e.preventDefault();                    // امنعي الإرسال
       alert("Please select whether the task was easy or not.");
-      submitBtn.disabled = false; // يعيد تفعيل الزر بعد التنبيه
+      submitBtn.disabled = false;            // رجّعي تفعيل الزر
     }
   });
 });
+
