@@ -94,9 +94,9 @@ def task(idx):
     if idx < 0 or idx >= len(tasks):
         flash("You have completed all tasks for this application.", "success")
         return redirect(url_for("choose_app"))
-    @app.route("/thanks")
-    def thanks():
-        return render_template("thanks.html")
+@app.route("/thanks")
+def thanks():
+    return render_template("thanks.html")
 
     # ✅ إذا أنهى المستخدم جميع التطبيقات وكل الجلسات
 if app_index == len(apps_list) - 1 and trial_number == sessions_per_app:
