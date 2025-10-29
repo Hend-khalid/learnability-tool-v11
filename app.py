@@ -190,13 +190,35 @@ def add_no_cache_headers(resp):
     resp.headers["Expires"] = "0"
     return resp
 
-# 🔥 مسار تحميل البيانات كملف ZIP
 @app.route("/download-data")
 def download_data():
-    """يضغط مجلد data إلى ملف ZIP قابل للتحميل."""
-    zip_filename = "data_backup.zip"
-    shutil.make_archive("data_backup", 'zip', DATA_DIR)
-    return send_file(zip_filename, as_attachment=True)
+    import tempfile
+    from flask import Response
+
+    # توليد اسم ملف مؤقت فريد كل مرة
+    tmp_zip = tempfile.NamedTemporaryFile(delete=False, suffix=f"_{int(time.time())}.zip")
+    shutil.make_archive(tmp_zip.name.replace(".zip", ""), "zip", DATA_DIR)
+    zip_path = tmp_zip.name
+
+    @after_this_request
+    def cleanup(response):
+        try:
+            if os.path.exists(zip_path):
+                os.remove(zip_path)
+        except Exception as e:
+            print("cleanup error:", e)
+        return response
+
+    resp = send_file(zip_path, as_attachment=True, download_name=f"data_backup_{int(time.time())}.zip")
+
+    # 🔥 رؤوس تمنع أي كاش من السيرفر أو المتصفح
+    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    resp.headers["ETag"] = str(uuid.uuid4())
+    resp.headers["Last-Modified"] = datetime.utcnow()
+    return resp
+
 
 
 # 📊 صفحة فحص الملفات والصفوف
