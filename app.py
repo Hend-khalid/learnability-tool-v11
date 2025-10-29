@@ -182,27 +182,62 @@ def thanks():
         return redirect(url_for("home"))
     return render_template("thanks.html")
 
-@app.route('/download-data')
+@app.route("/download-data")
 def download_data():
-    import csv, io, time
-    from flask import make_response
+    import io, csv, time, glob
+    from flask import Response
 
-    # افترض أن عندك قائمة responses فيها البيانات أو قاعدة بيانات
-    data = fetch_all_responses()  # اكتبي هنا الطريقة اللي تسحبين بها البيانات الفعلية
-    fieldnames = data[0].keys() if data else []
+    # نجمع كل ملفات CSV داخل مجلّد data/
+    csv_paths = sorted(glob.glob(os.path.join(DATA_DIR, "*.csv")))
 
     output = io.StringIO()
-    writer = csv.DictWriter(output, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(data)
+    writer = None
+    fieldnames = None
+    total_rows = 0
 
-    response = make_response(output.getvalue())
-    response.headers["Content-Disposition"] = f"attachment; filename=responses_{int(time.time())}.csv"
-    response.headers["Content-type"] = "text/csv"
-    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    response.headers["Pragma"] = "no-cache"
+    for p in csv_paths:
+        if not os.path.exists(p):
+            continue
+        with open(p, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            # تحديد الأعمدة من أول ملف فيه عناوين
+            if fieldnames is None and reader.fieldnames:
+                fieldnames = reader.fieldnames
+                writer = csv.DictWriter(output, fieldnames=fieldnames)
+                writer.writeheader()
+            # لو الملف الحالي عناوينه مختلفة أو فاضية، نتخطّاه
+            if not reader.fieldnames or reader.fieldnames != fieldnames:
+                continue
+            for row in reader:
+                writer.writerow(row)
+                total_rows += 1
 
-    return response
+    # لو ما لقينا أي صف (أو ما فيه ملفات)، رجّع ملف فاضي بعناوين افتراضية
+    if total_rows == 0:
+        fieldnames = [
+            "timestamp_iso","session_id",
+            "user_name","gender","age_group","major",
+            "app_name","app_experience",
+            "trial_number",
+            "task_index","task_description",
+            "duration_seconds","errors_count","help_count",
+            "easy_binary"
+        ]
+        writer = csv.DictWriter(output, fieldnames=fieldnames)
+        writer.writeheader()
+
+    csv_bytes = output.getvalue().encode("utf-8")
+    output.close()
+
+    filename = f"responses_{int(time.time())}.csv"
+    headers = {
+        "Content-Disposition": f'attachment; filename="{filename}"',
+        "Content-Type": "text/csv; charset=utf-8",
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+        "Pragma": "no-cache",
+        "Expires": "0",
+    }
+    return Response(csv_bytes, headers=headers)
 
 
 # تشغيل التطبيق
