@@ -190,22 +190,14 @@ def add_no_cache_headers(resp):
     resp.headers["Expires"] = "0"
     return resp
 
-# 🔥 تحميل كل ملفات البيانات كـ ZIP واحد
+# 🔥 مسار تحميل البيانات كملف ZIP
 @app.route("/download-data")
 def download_data():
-    base = f"data_backup_{int(time.time())}"
-    zip_path = shutil.make_archive(base, "zip", DATA_DIR)
+    """يضغط مجلد data إلى ملف ZIP قابل للتحميل."""
+    zip_filename = "data_backup.zip"
+    shutil.make_archive("data_backup", 'zip', DATA_DIR)
+    return send_file(zip_filename, as_attachment=True)
 
-    @after_this_request
-    def cleanup(resp):
-        try:
-            if os.path.exists(zip_path):
-                os.remove(zip_path)
-        except Exception:
-            pass
-        return resp
-
-    return send_file(zip_path, as_attachment=True)
 
 # 📊 صفحة فحص الملفات والصفوف
 @app.route("/debug-data-info")
