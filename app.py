@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash, send_file, after_this_request
 from datetime import datetime
-import csv, os, json, uuid, argparse, shutil, time
+import csv, os, json, uuid, argparse, shutil, time, glob
 
 SESSIONS_PER_APP = 2
 
@@ -14,9 +14,11 @@ with open(os.path.join("config", "apps_tasks.json"), "r", encoding="utf-8") as f
 with open(os.path.join("config", "app_downloads.json"), "r", encoding="utf-8") as f:
     APP_DOWNLOADS = json.load(f)
 
-DATA_DIR = "data"
+# 📦 مجلد البيانات - يدعم التخزين الدائم (Persistent Disk)
+DATA_DIR = os.environ.get("DATA_DIR", "/opt/render/project/src/data")
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# قراءة رابط الساندبوكس
+# 🔍 قراءة رابط الساندبوكس
 def _load_sandbox_url():
     try:
         with open(os.path.join("config", "sandbox_url.txt"), "r", encoding="utf-8") as f:
@@ -27,8 +29,6 @@ def _load_sandbox_url():
 @app.context_processor
 def inject_globals():
     return dict(SANDBOX_URL=_load_sandbox_url())
-
-os.makedirs(DATA_DIR, exist_ok=True)
 
 def ensure_csv(path):
     """يتأكد من وجود ملف CSV ويضيف العناوين إن لم يكن موجودًا."""
@@ -190,29 +190,42 @@ def add_no_cache_headers(resp):
     resp.headers["Expires"] = "0"
     return resp
 
-# 🔥 مسار تحميل البيانات كملف ZIP (يُنشئ أرشيف جديد كل مرة ويُحذَّف بعد الإرسال)
+# 🔥 تحميل كل ملفات البيانات كـ ZIP واحد
 @app.route("/download-data")
 def download_data():
     base = f"data_backup_{int(time.time())}"
-    zip_path = shutil.make_archive(base, "zip", DATA_DIR)  # يرجّع المسار الفعلي مثل "data_backup_123.zip"
+    zip_path = shutil.make_archive(base, "zip", DATA_DIR)
 
     @after_this_request
-    def _cleanup(response):
+    def cleanup(resp):
         try:
             if os.path.exists(zip_path):
                 os.remove(zip_path)
         except Exception:
             pass
-        return response
+        return resp
 
-    resp = send_file(zip_path, as_attachment=True)
-    # تأكيد منع أي كاش من وسيط/متصفح
-    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    resp.headers["Pragma"] = "no-cache"
-    resp.headers["Expires"] = "0"
-    return resp
+    return send_file(zip_path, as_attachment=True)
 
-# تشغيل التطبيق
+# 📊 صفحة فحص الملفات والصفوف
+@app.route("/debug-data-info")
+def debug_data_info():
+    info = {"dir": DATA_DIR, "files": [], "total_rows": 0}
+    for p in sorted(glob.glob(os.path.join(DATA_DIR, "*.csv"))):
+        rows = 0
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                r = csv.reader(f)
+                next(r)
+                for _ in r:
+                    rows += 1
+        except:
+            pass
+        info["files"].append({"name": os.path.basename(p), "rows": rows})
+        info["total_rows"] += rows
+    return info
+
+# 🚀 تشغيل التطبيق
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"))
