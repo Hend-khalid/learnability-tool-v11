@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash, send_file, Response
+from flask import Flask, render_template, request, redirect, url_for, session, flash, send_file, after_this_request
 from datetime import datetime
-import csv, os, json, uuid, argparse, shutil, glob, io, time
+import csv, os, json, uuid, argparse, shutil, time
 
 SESSIONS_PER_APP = 2
 
@@ -190,141 +190,27 @@ def add_no_cache_headers(resp):
     resp.headers["Expires"] = "0"
     return resp
 
-# تجميع كل ملفات data/*.csv في ملف واحد لحظة الطلب
+# 🔥 مسار تحميل البيانات كملف ZIP (يُنشئ أرشيف جديد كل مرة ويُحذَّف بعد الإرسال)
 @app.route("/download-data")
 def download_data():
-    csv_paths = sorted(glob.glob(os.path.join(DATA_DIR, "*.csv")))
+    base = f"data_backup_{int(time.time())}"
+    zip_path = shutil.make_archive(base, "zip", DATA_DIR)  # يرجّع المسار الفعلي مثل "data_backup_123.zip"
 
-    output = io.StringIO()
-    writer = None
-    fieldnames = None
-    total_rows = 0
-
-    for p in csv_paths:
-        if not os.path.exists(p):
-            continue
-        with open(p, "r", encoding="utf-8", newline="") as f:
-            reader = csv.DictReader(f)
-            if fieldnames is None and reader.fieldnames:
-                fieldnames = reader.fieldnames
-                writer = csv.DictWriter(output, fieldnames=fieldnames)
-                writer.writeheader()
-            if not reader.fieldnames or reader.fieldnames != fieldnames:
-                continue
-            for row in reader:
-                writer.writerow(row)
-                total_rows += 1
-
-    if total_rows == 0:
-        fieldnames = [
-            "timestamp_iso","session_id",
-            "user_name","gender","age_group","major",
-            "app_name","app_experience",
-            "trial_number",
-            "task_index","task_description",
-            "duration_seconds","errors_count","help_count",
-            "easy_binary"
-        ]
-        writer = csv.DictWriter(output, fieldnames=fieldnames)
-        writer.writeheader()
-
-    csv_bytes = output.getvalue().encode("utf-8")
-    output.close()
-
-    filename = f"responses_{int(time.time())}.csv"
-    headers = {
-        "Content-Disposition": f'attachment; filename="{filename}"',
-        "Content-Type": "text/csv; charset=utf-8",
-        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
-        "Pragma": "no-cache",
-        "Expires": "0",
-    }
-    return Response(csv_bytes, headers=headers)
-
-# نسخة تحميل قوية بكسر كاش إضافي
-@app.route("/download-data-now")
-def download_data_now():
-    csv_paths = sorted(glob.glob(os.path.join(DATA_DIR, "*.csv")))
-
-    output = io.StringIO()
-    writer = None
-    fieldnames = None
-    total_rows = 0
-
-    for p in csv_paths:
-        if not os.path.exists(p):
-            continue
-        with open(p, "r", encoding="utf-8", newline="") as f:
-            reader = csv.DictReader(f)
-            if fieldnames is None and reader.fieldnames:
-                fieldnames = reader.fieldnames
-                writer = csv.DictWriter(output, fieldnames=fieldnames)
-                writer.writeheader()
-            if not reader.fieldnames or reader.fieldnames != fieldnames:
-                continue
-            for row in reader:
-                writer.writerow(row)
-                total_rows += 1
-
-    if total_rows == 0:
-        fieldnames = [
-            "timestamp_iso","session_id",
-            "user_name","gender","age_group","major",
-            "app_name","app_experience","trial_number",
-            "task_index","task_description",
-            "duration_seconds","errors_count","help_count",
-            "easy_binary"
-        ]
-        writer = csv.DictWriter(output, fieldnames=fieldnames)
-        writer.writeheader()
-
-    csv_bytes = output.getvalue().encode("utf-8")
-    output.close()
-
-    filename = f"responses_{int(time.time())}.csv"
-    headers = {
-        "Content-Disposition": f'attachment; filename="{filename}"',
-        "Content-Type": "text/csv; charset=utf-8",
-        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
-        "Pragma": "no-cache",
-        "Expires": "0",
-        "X-Export-Id": str(uuid.uuid4()),
-        "ETag": str(uuid.uuid4()),
-    }
-    return Response(csv_bytes, headers=headers)
-
-# مسار تشخيص يُظهر عدد الصفوف في كل ملف داخل data/
-@app.route("/debug-data-info")
-def debug_data_info():
-    info = {"files": [], "total_rows": 0, "server_time": int(time.time())}
-    for p in sorted(glob.glob(os.path.join(DATA_DIR, "*.csv"))):
-        rows = 0
-        fields = []
-        err = None
+    @after_this_request
+    def _cleanup(response):
         try:
-            with open(p, "r", encoding="utf-8", newline="") as f:
-                r = csv.DictReader(f)
-                fields = r.fieldnames or []
-                for _ in r:
-                    rows += 1
-        except Exception as e:
-            err = str(e)
-        entry = {"path": p, "rows": rows, "fields": fields}
-        if err:
-            entry["error"] = err
-        else:
-            try:
-                entry["mtime"] = os.path.getmtime(p)
-            except:
-                pass
-        info["files"].append(entry)
-        info["total_rows"] += rows
+            if os.path.exists(zip_path):
+                os.remove(zip_path)
+        except Exception:
+            pass
+        return response
 
-    return app.response_class(
-        response=json.dumps(info, ensure_ascii=False, indent=2),
-        status=200,
-        mimetype="application/json"
-    )
+    resp = send_file(zip_path, as_attachment=True)
+    # تأكيد منع أي كاش من وسيط/متصفح
+    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    return resp
 
 # تشغيل التطبيق
 def main():
