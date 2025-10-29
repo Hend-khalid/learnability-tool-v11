@@ -182,13 +182,28 @@ def thanks():
         return redirect(url_for("home"))
     return render_template("thanks.html")
 
-# 🔥 مسار تحميل البيانات كملف ZIP
-@app.route("/download-data")
+@app.route('/download-data')
 def download_data():
-    """يضغط مجلد data إلى ملف ZIP قابل للتحميل."""
-    zip_filename = "data_backup.zip"
-    shutil.make_archive("data_backup", 'zip', DATA_DIR)
-    return send_file(zip_filename, as_attachment=True)
+    import csv, io, time
+    from flask import make_response
+
+    # افترض أن عندك قائمة responses فيها البيانات أو قاعدة بيانات
+    data = fetch_all_responses()  # اكتبي هنا الطريقة اللي تسحبين بها البيانات الفعلية
+    fieldnames = data[0].keys() if data else []
+
+    output = io.StringIO()
+    writer = csv.DictWriter(output, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(data)
+
+    response = make_response(output.getvalue())
+    response.headers["Content-Disposition"] = f"attachment; filename=responses_{int(time.time())}.csv"
+    response.headers["Content-type"] = "text/csv"
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+
+    return response
+
 
 # تشغيل التطبيق
 def main():
