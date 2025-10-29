@@ -1,0 +1,141 @@
+timestamp_iso,session_id,user_name,gender,age_group,major,app_name,app_experience,trial_number,task_index,task_description,duration_seconds,errors_count,help_count,easy_binary
+2025-10-28T22:36:51.140673,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,0,Open the article in Edit mode,1,0,0,1
+2025-10-28T22:36:54.136761,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,1,Add a new line of text,0,0,0,1
+2025-10-28T22:36:56.733662,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,2,Make a word bold,0,0,0,1
+2025-10-28T22:36:59.315276,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,3,Make a word italic,0,0,0,1
+2025-10-28T22:37:01.928223,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,4,Insert an internal link to another article,0,0,0,1
+2025-10-28T22:37:04.477057,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,5,Insert an external link to a website,0,0,0,1
+2025-10-28T22:37:07.099095,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,6,Create a bulleted list with 3 items,0,0,0,1
+2025-10-28T22:37:10.033336,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,7,Add a sub-heading,0,0,0,1
+2025-10-28T22:37:12.638585,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,8,Write an edit summary before saving,0,0,0,1
+2025-10-28T22:37:15.098527,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,9,Insert an image into the article,0,0,0,1
+2025-10-28T22:37:17.522947,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,10,Add a table (2 rows × 2 columns),0,0,0,1
+2025-10-28T22:37:19.782200,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,11,"Insert a template (e.g., {{Citation needed}})",0,0,0,1
+2025-10-28T22:37:22.167294,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,12,Use the Preview option,0,0,0,1
+2025-10-28T22:37:24.541963,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,1,13,Publish (save) the changes,0,0,0,1
+2025-10-28T22:37:31.188285,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,0,Open the article in Edit mode,0,0,0,1
+2025-10-28T22:37:34.236510,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,1,Add a new line of text,0,0,0,1
+2025-10-28T22:37:37.143015,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,2,Make a word bold,0,0,0,1
+2025-10-28T22:37:39.603576,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,3,Make a word italic,0,0,0,1
+2025-10-28T22:37:42.068061,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,4,Insert an internal link to another article,0,0,0,1
+2025-10-28T22:37:44.434449,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,5,Insert an external link to a website,0,0,0,1
+2025-10-28T22:37:46.853645,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,6,Create a bulleted list with 3 items,0,0,0,1
+2025-10-28T22:37:49.127894,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,7,Add a sub-heading,0,0,0,1
+2025-10-28T22:37:52.321581,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,8,Write an edit summary before saving,0,0,0,1
+2025-10-28T22:37:55.196186,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,9,Insert an image into the article,0,0,0,1
+2025-10-28T22:37:57.964073,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,10,Add a table (2 rows × 2 columns),0,0,0,1
+2025-10-28T22:38:00.708022,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,11,"Insert a template (e.g., {{Citation needed}})",0,0,0,1
+2025-10-28T22:38:03.402555,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,12,Use the Preview option,0,0,0,1
+2025-10-28T22:38:06.228609,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,Wiki-Edit,Beginner,2,13,Publish (save) the changes,0,0,0,1
+2025-10-29T01:08:30.973096,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,0,Open the article in Edit mode,20,0,0,1
+2025-10-29T01:09:23.558346,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,1,Add a new line of text,11,0,0,1
+2025-10-29T01:09:35.254976,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,2,Make a word bold,8,0,0,1
+2025-10-29T01:09:46.066227,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,3,Make a word italic,7,0,0,1
+2025-10-29T01:10:20.194591,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,4,Insert an internal link to another article,27,0,0,1
+2025-10-29T01:10:45.585022,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,5,Insert an external link to a website,18,0,0,1
+2025-10-29T01:11:10.457112,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,6,Create a bulleted list with 3 items,20,0,0,1
+2025-10-29T01:11:35.367853,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,7,Add a sub-heading,20,0,0,1
+2025-10-29T01:12:03.099423,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,8,Write an edit summary before saving,21,0,0,1
+2025-10-29T01:12:27.867237,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,9,Insert an image into the article,19,0,0,1
+2025-10-29T01:12:57.184847,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,10,Add a table (2 rows × 2 columns),12,0,0,1
+2025-10-29T01:13:19.639343,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,11,"Insert a template (e.g., {{Citation needed}})",16,0,0,1
+2025-10-29T01:13:42.972166,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,12,Use the Preview option,19,0,0,1
+2025-10-29T01:14:21.154786,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,1,13,Publish (save) the changes,34,0,0,1
+2025-10-29T01:14:35.825869,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,0,Open the article in Edit mode,10,0,0,1
+2025-10-29T01:14:46.807936,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,1,Add a new line of text,8,0,0,1
+2025-10-29T01:14:59.168325,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,2,Make a word bold,9,0,0,1
+2025-10-29T01:15:13.755651,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,3,Make a word italic,11,0,0,1
+2025-10-29T01:15:28.093227,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,4,Insert an internal link to another article,11,0,0,1
+2025-10-29T01:15:43.308040,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,5,Insert an external link to a website,12,0,0,1
+2025-10-29T01:16:07.481003,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,6,Create a bulleted list with 3 items,21,0,0,1
+2025-10-29T01:16:27.222048,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,7,Add a sub-heading,15,0,0,1
+2025-10-29T01:17:01.828300,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,8,Write an edit summary before saving,31,0,0,1
+2025-10-29T01:17:25.252687,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,9,Insert an image into the article,19,0,0,1
+2025-10-29T01:17:47.823358,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,10,Add a table (2 rows × 2 columns),19,0,0,1
+2025-10-29T01:18:19.997759,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,11,"Insert a template (e.g., {{Citation needed}})",24,0,0,1
+2025-10-29T01:18:55.879421,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,12,Use the Preview option,32,0,0,1
+2025-10-29T01:19:33.206402,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,Wiki-Edit,None,2,13,Publish (save) the changes,33,0,0,1
+2025-10-29T02:06:56.925549,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,0,Open the article in Edit mode,6,0,0,1
+2025-10-29T02:07:18.337276,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,1,Add a new line of text,16,0,0,1
+2025-10-29T02:07:29.373368,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,2,Make a word bold,6,0,0,1
+2025-10-29T02:07:46.834209,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,3,Make a word italic,13,0,0,1
+2025-10-29T02:08:35.706865,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,4,Insert an internal link to another article,43,0,0,1
+2025-10-29T02:09:04.430419,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,5,Insert an external link to a website,21,1,1,0
+2025-10-29T02:09:41.224045,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,6,Create a bulleted list with 3 items,32,0,0,1
+2025-10-29T02:10:04.863299,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,7,Add a sub-heading,18,0,0,1
+2025-10-29T02:10:25.163318,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,8,Write an edit summary before saving,16,0,0,1
+2025-10-29T02:11:34.071024,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,9,Insert an image into the article,64,0,1,1
+2025-10-29T02:12:20.144420,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,10,Add a table (2 rows × 2 columns),40,0,0,1
+2025-10-29T02:12:47.853402,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,11,"Insert a template (e.g., {{Citation needed}})",24,2,1,0
+2025-10-29T02:13:38.809295,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,12,Use the Preview option,44,0,0,1
+2025-10-29T02:13:52.452738,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,1,13,Publish (save) the changes,9,0,0,1
+2025-10-29T02:14:06.449878,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,0,Open the article in Edit mode,8,0,0,1
+2025-10-29T02:14:34.796310,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,1,Add a new line of text,25,0,0,1
+2025-10-29T02:14:49.101829,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,2,Make a word bold,9,0,0,1
+2025-10-29T02:15:14.969696,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,3,Make a word italic,22,0,0,1
+2025-10-29T02:15:31.806454,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,4,Insert an internal link to another article,13,0,0,1
+2025-10-29T02:15:46.846267,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,5,Insert an external link to a website,10,0,0,1
+2025-10-29T02:16:13.642767,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,6,Create a bulleted list with 3 items,23,0,0,1
+2025-10-29T02:16:32.255366,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,7,Add a sub-heading,15,0,0,1
+2025-10-29T02:16:50.410066,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,8,Write an edit summary before saving,9,0,0,1
+2025-10-29T02:17:07.054157,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,9,Insert an image into the article,12,0,0,1
+2025-10-29T02:17:22.357434,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,10,Add a table (2 rows × 2 columns),12,0,0,1
+2025-10-29T02:17:39.130206,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,11,"Insert a template (e.g., {{Citation needed}})",12,0,0,1
+2025-10-29T02:17:53.069259,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,12,Use the Preview option,9,0,0,1
+2025-10-29T02:18:05.029732,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,Wiki-Edit,None,2,13,Publish (save) the changes,8,0,0,1
+2025-10-29T04:16:49.448875,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,0,Open the article in Edit mode,32,0,0,1
+2025-10-29T04:17:26.541688,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,1,Add a new line of text,32,0,0,0
+2025-10-29T04:18:03.993002,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,2,Make a word bold,28,0,0,0
+2025-10-29T04:18:20.201814,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,3,Make a word italic,11,0,0,1
+2025-10-29T04:18:48.373814,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,4,Insert an internal link to another article,22,0,0,1
+2025-10-29T04:19:35.477252,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,5,Insert an external link to a website,29,0,0,1
+2025-10-29T04:20:07.037065,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,6,Create a bulleted list with 3 items,25,0,0,0
+2025-10-29T04:20:58.796063,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,7,Add a sub-heading,43,2,0,1
+2025-10-29T04:22:18.470477,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,8,Write an edit summary before saving,64,0,0,0
+2025-10-29T04:22:52.695320,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,9,Insert an image into the article,28,0,0,1
+2025-10-29T04:24:00.969041,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,10,Add a table (2 rows × 2 columns),39,0,0,1
+2025-10-29T04:24:48.404127,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,11,"Insert a template (e.g., {{Citation needed}})",39,0,0,0
+2025-10-29T04:25:18.799987,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,12,Use the Preview option,14,0,0,1
+2025-10-29T04:25:35.947546,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,1,13,Publish (save) the changes,11,0,0,1
+2025-10-29T04:25:56.445845,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,0,Open the article in Edit mode,14,0,0,1
+2025-10-29T04:26:12.662243,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,1,Add a new line of text,10,0,0,1
+2025-10-29T04:26:28.623002,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,2,Make a word bold,11,0,0,1
+2025-10-29T04:26:41.424299,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,3,Make a word italic,7,0,0,1
+2025-10-29T04:27:18.791869,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,4,Insert an internal link to another article,31,0,0,1
+2025-10-29T04:27:51.158187,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,5,Insert an external link to a website,22,0,0,1
+2025-10-29T04:28:16.934600,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,6,Create a bulleted list with 3 items,18,0,0,1
+2025-10-29T04:29:22.782715,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,7,Add a sub-heading,28,0,0,1
+2025-10-29T04:30:04.974877,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,8,Write an edit summary before saving,31,0,0,1
+2025-10-29T04:30:37.989418,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,9,Insert an image into the article,26,0,0,1
+2025-10-29T04:31:00.117097,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,10,Add a table (2 rows × 2 columns),17,0,0,1
+2025-10-29T04:32:18.651756,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,11,"Insert a template (e.g., {{Citation needed}})",54,1,0,0
+2025-10-29T04:32:40.549062,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,12,Use the Preview option,13,0,0,1
+2025-10-29T04:33:06.193011,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,Wiki-Edit,None,2,13,Publish (save) the changes,16,0,0,1
+2025-10-29T08:23:42.449890,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,0,Open the article in Edit mode,54,0,0,1
+2025-10-29T08:25:21.760269,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,1,Add a new line of text,66,0,0,1
+2025-10-29T08:26:13.376049,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,2,Make a word bold,35,0,0,1
+2025-10-29T08:26:44.234806,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,3,Make a word italic,23,0,0,1
+2025-10-29T08:28:08.334468,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,4,Insert an internal link to another article,72,0,0,1
+2025-10-29T08:29:47.935002,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,5,Insert an external link to a website,47,0,0,1
+2025-10-29T08:30:32.423756,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,6,Create a bulleted list with 3 items,32,0,0,1
+2025-10-29T08:32:03.554833,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,7,Add a sub-heading,74,0,0,1
+2025-10-29T08:36:00.393285,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,8,Write an edit summary before saving,56,0,0,1
+2025-10-29T08:36:43.658212,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,9,Insert an image into the article,36,0,0,1
+2025-10-29T08:37:16.153434,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,10,Add a table (2 rows × 2 columns),26,0,0,1
+2025-10-29T08:38:05.467452,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,11,"Insert a template (e.g., {{Citation needed}})",42,0,1,1
+2025-10-29T08:38:55.294930,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,12,Use the Preview option,40,0,0,1
+2025-10-29T08:39:42.397441,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,1,13,Publish (save) the changes,38,0,0,1
+2025-10-29T08:40:58.884966,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,0,Open the article in Edit mode,66,0,0,1
+2025-10-29T08:41:36.309299,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,1,Add a new line of text,31,0,0,1
+2025-10-29T08:42:09.731286,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,2,Make a word bold,27,0,0,1
+2025-10-29T08:43:03.207527,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,3,Make a word italic,44,0,1,0
+2025-10-29T08:44:14.436534,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,4,Insert an internal link to another article,63,0,0,1
+2025-10-29T08:45:11.457303,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,5,Insert an external link to a website,50,0,0,1
+2025-10-29T08:46:21.390020,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,6,Create a bulleted list with 3 items,62,0,0,1
+2025-10-29T08:47:29.165254,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,7,Add a sub-heading,62,0,0,1
+2025-10-29T08:49:24.905981,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,8,Write an edit summary before saving,111,0,0,1
+2025-10-29T08:49:50.903056,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,9,Insert an image into the article,20,0,0,1
+2025-10-29T08:50:40.542468,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,10,Add a table (2 rows × 2 columns),45,0,0,1
+2025-10-29T08:51:28.865906,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,11,"Insert a template (e.g., {{Citation needed}})",40,0,0,1
+2025-10-29T08:52:06.152434,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,12,Use the Preview option,32,0,0,1
+2025-10-29T08:52:35.721441,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,Wiki-Edit,Beginner,2,13,Publish (save) the changes,21,0,0,1

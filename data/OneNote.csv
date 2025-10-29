@@ -1,0 +1,171 @@
+timestamp_iso,session_id,user_name,gender,age_group,major,app_name,app_experience,trial_number,task_index,task_description,duration_seconds,errors_count,help_count,easy_binary
+2025-10-28T20:16:13.240479,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,0,Create a new notebook titled 'Research_Project_2025'.,1,0,0,1
+2025-10-28T20:16:17.173415,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,1,Add a section called 'Meeting_Notes.',0,0,0,1
+2025-10-28T20:16:21.016953,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,2,Create a page named 'Project_Planning.',0,0,0,1
+2025-10-28T20:16:24.932165,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,3,Type a meeting highlight points.,0,0,0,1
+2025-10-28T20:16:28.832987,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,4,Apply bold formatting to highlight key points.,0,0,0,1
+2025-10-28T20:16:32.346169,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,0,0,0,1
+2025-10-28T20:16:36.364885,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,6,Insert a project logo.,0,0,0,1
+2025-10-28T20:16:39.682278,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T20:16:43.887839,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,8,Use the search function to find a specific keyword in your notes.,0,0,0,1
+2025-10-28T20:16:47.223697,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',0,0,0,1
+2025-10-28T20:16:51.253400,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,10,Share the notebook with a teammate via email.,0,0,0,1
+2025-10-28T20:16:54.858315,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,11,Translate a sentence from English to another language (for multilingual collaboration).,0,0,0,1
+2025-10-28T20:16:59.091604,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,12,Run a spell check to ensure the notes are error-free.,0,0,0,1
+2025-10-28T20:17:02.454802,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,0,0,0,1
+2025-10-28T20:17:09.145333,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,0,Create a new notebook titled 'Research_Project_2025'.,0,0,0,1
+2025-10-28T20:17:13.228861,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,1,Add a section called 'Meeting_Notes.',0,0,0,1
+2025-10-28T20:17:17.050124,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,2,Create a page named 'Project_Planning.',0,0,0,1
+2025-10-28T20:17:20.412822,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,3,Type a meeting highlight points.,0,0,0,1
+2025-10-28T20:17:23.642825,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,4,Apply bold formatting to highlight key points.,0,0,0,1
+2025-10-28T20:17:27.193926,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,0,0,0,1
+2025-10-28T20:17:30.941824,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,6,Insert a project logo.,0,0,0,1
+2025-10-28T20:17:35.011821,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T20:17:38.878030,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,8,Use the search function to find a specific keyword in your notes.,0,0,0,1
+2025-10-28T20:17:42.256540,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',0,0,0,1
+2025-10-28T20:17:45.832985,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,10,Share the notebook with a teammate via email.,0,0,0,1
+2025-10-28T20:17:49.205401,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,11,Translate a sentence from English to another language (for multilingual collaboration).,0,0,0,1
+2025-10-28T20:17:54.602143,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,12,Run a spell check to ensure the notes are error-free.,0,0,0,1
+2025-10-28T20:17:59.521574,a5e906ee-19e0-4093-bf59-c64c965c80f9,Soso,Female,20–29,IT,OneNote,None,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,0,0,0,1
+2025-10-28T22:35:15.214895,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,0,Create a new notebook titled 'Research_Project_2025'.,0,0,0,1
+2025-10-28T22:35:18.518340,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,1,Add a section called 'Meeting_Notes.',0,0,0,1
+2025-10-28T22:35:21.353619,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,2,Create a page named 'Project_Planning.',0,0,0,1
+2025-10-28T22:35:24.510785,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,3,Type a meeting highlight points.,0,0,0,1
+2025-10-28T22:35:27.134574,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,4,Apply bold formatting to highlight key points.,0,0,0,1
+2025-10-28T22:35:30.173553,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,0,0,0,1
+2025-10-28T22:35:33.519432,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,6,Insert a project logo.,0,0,0,1
+2025-10-28T22:35:36.178966,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T22:35:36.647958,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T22:35:39.295136,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,8,Use the search function to find a specific keyword in your notes.,0,0,0,1
+2025-10-28T22:35:44.353865,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',0,0,0,1
+2025-10-28T22:35:46.936804,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,10,Share the notebook with a teammate via email.,0,0,0,1
+2025-10-28T22:35:49.879018,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,11,Translate a sentence from English to another language (for multilingual collaboration).,0,0,0,1
+2025-10-28T22:35:53.228016,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,12,Run a spell check to ensure the notes are error-free.,0,0,0,1
+2025-10-28T22:35:56.218524,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,0,0,0,1
+2025-10-28T22:36:00.583107,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,0,Create a new notebook titled 'Research_Project_2025'.,0,0,0,1
+2025-10-28T22:36:03.454417,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,1,Add a section called 'Meeting_Notes.',0,0,0,1
+2025-10-28T22:36:06.194112,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,2,Create a page named 'Project_Planning.',0,0,0,1
+2025-10-28T22:36:08.880720,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,3,Type a meeting highlight points.,0,0,0,1
+2025-10-28T22:36:11.609264,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,4,Apply bold formatting to highlight key points.,0,0,0,1
+2025-10-28T22:36:14.049032,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,0,0,0,1
+2025-10-28T22:36:17.844980,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,6,Insert a project logo.,0,0,0,1
+2025-10-28T22:36:20.905260,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T22:36:21.283669,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,7,Attach a reference PDF file for background reading.,0,0,0,1
+2025-10-28T22:36:24.283616,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,8,Use the search function to find a specific keyword in your notes.,0,0,0,1
+2025-10-28T22:36:27.023557,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',0,0,0,1
+2025-10-28T22:36:29.710734,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,10,Share the notebook with a teammate via email.,0,0,0,1
+2025-10-28T22:36:32.318809,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,11,Translate a sentence from English to another language (for multilingual collaboration).,0,0,0,1
+2025-10-28T22:36:34.889275,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,12,Run a spell check to ensure the notes are error-free.,0,0,0,1
+2025-10-28T22:36:37.667731,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,OneNote,Beginner,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,0,0,0,1
+2025-10-29T00:19:01.457275,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,0,Create a new notebook titled 'Research_Project_2025'.,8,0,0,1
+2025-10-29T00:19:54.503443,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,1,Add a section called 'Meeting_Notes.',18,0,0,1
+2025-10-29T00:20:27.552004,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,2,Create a page named 'Project_Planning.',7,0,0,1
+2025-10-29T00:21:41.445238,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,3,Type a meeting highlight points.,33,0,0,1
+2025-10-29T00:22:18.193085,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,4,Apply bold formatting to highlight key points.,17,0,0,1
+2025-10-29T00:24:40.353853,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,93,0,0,1
+2025-10-29T00:25:43.735322,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,6,Insert a project logo.,19,0,0,1
+2025-10-29T00:27:18.652718,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,7,Attach a reference PDF file for background reading.,27,0,0,1
+2025-10-29T00:28:42.243847,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,8,Use the search function to find a specific keyword in your notes.,75,0,0,1
+2025-10-29T00:29:25.906656,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',34,0,0,1
+2025-10-29T00:30:25.916464,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,10,Share the notebook with a teammate via email.,24,0,0,1
+2025-10-29T00:33:32.543185,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,11,Translate a sentence from English to another language (for multilingual collaboration).,66,0,0,1
+2025-10-29T00:34:30.686788,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,12,Run a spell check to ensure the notes are error-free.,41,0,0,1
+2025-10-29T00:35:30.674377,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,27,0,0,1
+2025-10-29T00:36:06.011231,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,0,Create a new notebook titled 'Research_Project_2025'.,24,0,0,1
+2025-10-29T00:36:52.927793,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,1,Add a section called 'Meeting_Notes.',31,0,0,1
+2025-10-29T00:37:08.962629,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,2,Create a page named 'Project_Planning.',12,0,0,1
+2025-10-29T00:37:57.829790,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,3,Type a meeting highlight points.,22,0,0,1
+2025-10-29T00:38:17.138437,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,4,Apply bold formatting to highlight key points.,14,0,0,1
+2025-10-29T00:38:52.705372,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,29,0,0,1
+2025-10-29T00:39:16.194140,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,6,Insert a project logo.,18,0,0,1
+2025-10-29T00:39:32.407797,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,7,Attach a reference PDF file for background reading.,12,0,0,1
+2025-10-29T00:39:49.519934,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,8,Use the search function to find a specific keyword in your notes.,12,0,0,1
+2025-10-29T00:40:35.263359,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',31,0,0,1
+2025-10-29T00:41:36.669428,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,10,Share the notebook with a teammate via email.,53,0,0,1
+2025-10-29T00:42:38.744165,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,11,Translate a sentence from English to another language (for multilingual collaboration).,46,0,0,1
+2025-10-29T00:43:12.444828,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,12,Run a spell check to ensure the notes are error-free.,19,0,0,1
+2025-10-29T00:43:42.048052,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,OneNote,Beginner,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,23,0,0,1
+2025-10-29T01:47:35.804825,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,0,Create a new notebook titled 'Research_Project_2025'.,6,0,0,1
+2025-10-29T01:47:48.242543,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,1,Add a section called 'Meeting_Notes.',6,0,0,1
+2025-10-29T01:48:04.303057,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,2,Create a page named 'Project_Planning.',10,0,0,1
+2025-10-29T01:48:39.410045,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,3,Type a meeting highlight points.,30,0,0,1
+2025-10-29T01:48:49.128594,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,4,Apply bold formatting to highlight key points.,5,0,0,1
+2025-10-29T01:49:13.266748,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,20,0,0,1
+2025-10-29T01:50:29.863509,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,6,Insert a project logo.,66,0,0,1
+2025-10-29T01:51:37.467162,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,7,Attach a reference PDF file for background reading.,61,0,0,1
+2025-10-29T01:52:06.726067,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,8,Use the search function to find a specific keyword in your notes.,20,0,0,1
+2025-10-29T01:53:08.125147,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',53,0,0,0
+2025-10-29T01:54:28.569606,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,10,Share the notebook with a teammate via email.,72,0,0,1
+2025-10-29T01:55:31.326188,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,11,Translate a sentence from English to another language (for multilingual collaboration).,55,0,0,1
+2025-10-29T01:56:18.906792,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,12,Run a spell check to ensure the notes are error-free.,41,0,0,1
+2025-10-29T01:56:40.012687,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,5,0,0,1
+2025-10-29T01:56:56.733251,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,0,Create a new notebook titled 'Research_Project_2025'.,9,0,0,1
+2025-10-29T01:57:10.272366,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,1,Add a section called 'Meeting_Notes.',9,0,0,1
+2025-10-29T01:57:24.544274,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,2,Create a page named 'Project_Planning.',9,0,0,1
+2025-10-29T01:59:09.892927,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,3,Type a meeting highlight points.,98,0,0,1
+2025-10-29T02:00:02.682388,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,4,Apply bold formatting to highlight key points.,40,0,0,1
+2025-10-29T02:01:14.662340,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,62,0,0,1
+2025-10-29T02:02:36.373130,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,6,Insert a project logo.,76,0,0,1
+2025-10-29T02:03:29.370082,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,7,Attach a reference PDF file for background reading.,48,0,0,1
+2025-10-29T02:03:56.647873,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,8,Use the search function to find a specific keyword in your notes.,23,0,0,1
+2025-10-29T02:04:19.471904,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',10,0,0,1
+2025-10-29T02:04:34.888073,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,10,Share the notebook with a teammate via email.,11,0,0,1
+2025-10-29T02:05:15.256868,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,11,Translate a sentence from English to another language (for multilingual collaboration).,33,0,0,1
+2025-10-29T02:05:33.610353,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,12,Run a spell check to ensure the notes are error-free.,12,0,0,1
+2025-10-29T02:06:01.769891,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,OneNote,None,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,24,0,0,1
+2025-10-29T03:14:49.422596,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,0,Create a new notebook titled 'Research_Project_2025'.,190,0,2,1
+2025-10-29T03:16:21.829554,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,1,Add a section called 'Meeting_Notes.',61,0,0,1
+2025-10-29T03:17:03.813756,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,2,Create a page named 'Project_Planning.',12,0,0,1
+2025-10-29T03:17:33.480528,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,3,Type a meeting highlight points.,17,0,0,1
+2025-10-29T03:17:57.711286,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,4,Apply bold formatting to highlight key points.,7,0,0,1
+2025-10-29T03:19:22.659242,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,8,0,0,1
+2025-10-29T03:19:59.449750,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,6,Insert a project logo.,8,0,0,1
+2025-10-29T03:20:41.655537,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,7,Attach a reference PDF file for background reading.,26,0,0,1
+2025-10-29T03:21:39.673851,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,8,Use the search function to find a specific keyword in your notes.,12,0,0,1
+2025-10-29T03:23:01.795830,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',26,0,0,0
+2025-10-29T03:23:26.928418,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,10,Share the notebook with a teammate via email.,12,0,0,1
+2025-10-29T03:24:48.945902,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,11,Translate a sentence from English to another language (for multilingual collaboration).,64,2,0,0
+2025-10-29T03:25:35.507607,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,12,Run a spell check to ensure the notes are error-free.,36,0,0,0
+2025-10-29T03:26:16.188060,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,10,0,0,1
+2025-10-29T03:27:41.873059,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,0,Create a new notebook titled 'Research_Project_2025'.,8,0,0,1
+2025-10-29T03:28:27.614983,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,1,Add a section called 'Meeting_Notes.',9,0,0,1
+2025-10-29T03:29:37.621169,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,2,Create a page named 'Project_Planning.',52,2,0,0
+2025-10-29T03:30:36.134120,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,3,Type a meeting highlight points.,45,0,0,1
+2025-10-29T03:30:53.045611,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,4,Apply bold formatting to highlight key points.,10,0,0,1
+2025-10-29T03:33:09.096880,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,35,0,0,1
+2025-10-29T03:33:54.175966,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,6,Insert a project logo.,28,0,0,1
+2025-10-29T03:35:05.157103,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,7,Attach a reference PDF file for background reading.,26,0,0,1
+2025-10-29T03:35:25.618479,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,8,Use the search function to find a specific keyword in your notes.,10,0,0,1
+2025-10-29T03:36:28.971943,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',47,0,0,0
+2025-10-29T03:37:16.187232,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,10,Share the notebook with a teammate via email.,39,0,0,1
+2025-10-29T03:38:07.337824,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,11,Translate a sentence from English to another language (for multilingual collaboration).,38,0,0,1
+2025-10-29T03:38:41.673790,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,12,Run a spell check to ensure the notes are error-free.,24,0,0,0
+2025-10-29T03:39:39.935158,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,OneNote,Intermediate,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,50,0,0,0
+2025-10-29T06:57:37.386654,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,0,Create a new notebook titled 'Research_Project_2025'.,113,0,0,1
+2025-10-29T07:00:43.502826,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,1,Add a section called 'Meeting_Notes.',120,0,0,0
+2025-10-29T07:02:54.922819,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,2,Create a page named 'Project_Planning.',112,0,1,0
+2025-10-29T07:05:37.083715,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,3,Type a meeting highlight points.,145,0,0,1
+2025-10-29T07:06:55.030601,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,4,Apply bold formatting to highlight key points.,46,0,0,0
+2025-10-29T07:10:50.901566,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,5,Create a to-do list for tasks assigned to team members and mark one as important.,129,0,1,1
+2025-10-29T07:12:06.362009,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,6,Insert a project logo.,68,0,0,1
+2025-10-29T07:13:20.998800,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,7,Attach a reference PDF file for background reading.,62,0,0,1
+2025-10-29T07:14:41.480822,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,8,Use the search function to find a specific keyword in your notes.,70,0,0,1
+2025-10-29T07:16:09.730883,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',70,0,0,1
+2025-10-29T07:17:03.653305,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,10,Share the notebook with a teammate via email.,42,0,0,1
+2025-10-29T07:18:15.929899,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,11,Translate a sentence from English to another language (for multilingual collaboration).,61,0,0,1
+2025-10-29T07:18:47.058511,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,12,Run a spell check to ensure the notes are error-free.,22,0,0,1
+2025-10-29T07:19:46.413407,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,1,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,48,0,1,1
+2025-10-29T07:21:09.470340,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,0,Create a new notebook titled 'Research_Project_2025'.,69,0,0,0
+2025-10-29T07:22:06.311668,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,1,Add a section called 'Meeting_Notes.',50,0,0,1
+2025-10-29T07:22:49.060624,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,2,Create a page named 'Project_Planning.',34,0,0,1
+2025-10-29T07:23:35.444797,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,3,Type a meeting highlight points.,40,0,0,1
+2025-10-29T07:24:28.050666,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,4,Apply bold formatting to highlight key points.,45,0,0,1
+2025-10-29T07:25:48.385254,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,5,Create a to-do list for tasks assigned to team members and mark one as important.,73,0,0,1
+2025-10-29T07:26:10.972085,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,6,Insert a project logo.,17,0,0,1
+2025-10-29T07:26:46.827953,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,7,Attach a reference PDF file for background reading.,31,0,0,1
+2025-10-29T07:27:34.156103,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,8,Use the search function to find a specific keyword in your notes.,40,0,0,1
+2025-10-29T07:28:10.064353,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,9,Move the page ' Project_Planning ' to a new section called 'Research_Findings.',30,0,0,1
+2025-10-29T07:28:48.751836,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,10,Share the notebook with a teammate via email.,33,0,0,1
+2025-10-29T07:29:23.629129,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,11,Translate a sentence from English to another language (for multilingual collaboration).,26,0,0,1
+2025-10-29T07:29:52.878895,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,12,Run a spell check to ensure the notes are error-free.,22,0,0,1
+2025-10-29T07:30:28.828184,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,OneNote,Beginner,2,13,Export the Project_Planning notes as a PDF file to distribute to stakeholders.,30,0,0,1

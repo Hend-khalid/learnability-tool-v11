@@ -3,3 +3,224 @@ timestamp_iso,session_id,user_name,gender,age_group,major,app_name,app_experienc
 2025-10-26T14:24:06.189535,5e4bb753-b2d7-4e69-ba01-e612e3b013cc,Hend,Female,20–29,CS,StarUML,None,1,1,Create a new Use Case Diagram in the project,0,0,0,1
 2025-10-26T14:24:13.923188,5e4bb753-b2d7-4e69-ba01-e612e3b013cc,Hend,Female,20–29,CS,StarUML,None,1,2,Add one Actor to the Use Case Diagram,0,0,0,1
 2025-10-26T14:24:21.422765,5e4bb753-b2d7-4e69-ba01-e612e3b013cc,Hend,Female,20–29,CS,StarUML,None,1,3,Add one Use Case and connect it to the Actor,0,0,0,1
+2025-10-28T20:50:20.013473,c10c80b1-a790-4fcf-9f51-399c2a890396,Luis,Male,40+,Engineer,StarUML,Beginner,1,0,Open a new project in StarUML,34,0,0,1
+2025-10-28T20:51:40.401982,c10c80b1-a790-4fcf-9f51-399c2a890396,Luis,Male,40+,Engineer,StarUML,Beginner,1,1,Create a new Use Case Diagram in the project,9,0,0,1
+2025-10-28T20:53:46.264583,c10c80b1-a790-4fcf-9f51-399c2a890396,Luis,Male,40+,Engineer,StarUML,Beginner,1,2,Add one Actor to the Use Case Diagram,78,0,0,1
+2025-10-28T22:33:31.670656,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,0,Open a new project in StarUML,3,0,0,1
+2025-10-28T22:33:37.652606,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,1,Create a new Use Case Diagram in the project,0,0,0,1
+2025-10-28T22:33:41.918452,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,2,Add one Actor to the Use Case Diagram,0,0,0,1
+2025-10-28T22:33:45.396192,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,3,Add one Use Case and connect it to the Actor,0,0,0,1
+2025-10-28T22:33:49.617543,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,4,Rename the elements (Actor and Use Case) with meaningful names,0,0,0,1
+2025-10-28T22:33:52.921318,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,5,"Add multiple Actors (e.g., User and Administrator)",0,0,0,1
+2025-10-28T22:33:56.767305,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,6,Add include/extend relationships between Use Cases,0,0,0,1
+2025-10-28T22:34:00.453933,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,7,Create a new Class Diagram in the same project,0,0,0,1
+2025-10-28T22:34:03.363689,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,8,Add a Class with attributes and methods,0,0,0,1
+2025-10-28T22:34:06.446330,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,9,Add an Association relationship between two Classes,0,0,0,1
+2025-10-28T22:34:10.183668,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,10,Add a Generalization (Inheritance) relationship between two Classes,0,0,0,1
+2025-10-28T22:34:12.916311,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,11,Create a new Sequence Diagram and add it to the project,0,0,0,1
+2025-10-28T22:34:15.915094,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,0,0,0,1
+2025-10-28T22:34:19.130059,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,1,13,Export the project as XMI or PDF and save it,0,0,0,1
+2025-10-28T22:34:24.306567,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,0,Open a new project in StarUML,0,0,0,1
+2025-10-28T22:34:27.575668,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,1,Create a new Use Case Diagram in the project,0,0,0,1
+2025-10-28T22:34:30.587875,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,2,Add one Actor to the Use Case Diagram,0,0,0,1
+2025-10-28T22:34:33.335020,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,3,Add one Use Case and connect it to the Actor,0,0,0,1
+2025-10-28T22:34:33.763581,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,3,Add one Use Case and connect it to the Actor,0,0,0,1
+2025-10-28T22:34:36.578348,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,4,Rename the elements (Actor and Use Case) with meaningful names,0,0,0,1
+2025-10-28T22:34:39.435630,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,5,"Add multiple Actors (e.g., User and Administrator)",0,0,0,1
+2025-10-28T22:34:41.981147,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,6,Add include/extend relationships between Use Cases,0,0,0,1
+2025-10-28T22:34:44.994041,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,7,Create a new Class Diagram in the same project,0,0,0,1
+2025-10-28T22:34:47.543674,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,8,Add a Class with attributes and methods,0,0,0,1
+2025-10-28T22:34:50.872851,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,9,Add an Association relationship between two Classes,0,0,0,1
+2025-10-28T22:34:54.057216,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,10,Add a Generalization (Inheritance) relationship between two Classes,0,0,0,1
+2025-10-28T22:34:56.844782,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,11,Create a new Sequence Diagram and add it to the project,0,0,0,1
+2025-10-28T22:34:59.457385,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,0,0,0,1
+2025-10-28T22:35:02.316824,5a0188a5-50ab-4543-9be5-4d2958f158f1,jkjji,Female,40+,jkjhjk,StarUML,Beginner,2,13,Export the project as XMI or PDF and save it,0,0,0,1
+2025-10-29T00:48:08.237596,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,0,Open a new project in StarUML,13,0,0,1
+2025-10-29T00:49:16.297296,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,1,Create a new Use Case Diagram in the project,59,0,1,1
+2025-10-29T00:49:36.599304,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,2,Add one Actor to the Use Case Diagram,13,0,0,1
+2025-10-29T00:50:36.985350,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,3,Add one Use Case and connect it to the Actor,55,0,0,1
+2025-10-29T00:51:01.394792,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,4,Rename the elements (Actor and Use Case) with meaningful names,5,0,0,1
+2025-10-29T00:51:44.250646,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,5,"Add multiple Actors (e.g., User and Administrator)",25,0,0,1
+2025-10-29T00:52:57.720030,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,6,Add include/extend relationships between Use Cases,45,0,1,1
+2025-10-29T00:53:25.986037,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,7,Create a new Class Diagram in the same project,23,0,0,1
+2025-10-29T00:54:24.285807,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,8,Add a Class with attributes and methods,53,0,1,1
+2025-10-29T00:54:56.921984,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,9,Add an Association relationship between two Classes,11,0,0,1
+2025-10-29T00:55:36.275284,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,10,Add a Generalization (Inheritance) relationship between two Classes,33,0,0,1
+2025-10-29T00:55:55.740458,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,11,Create a new Sequence Diagram and add it to the project,14,0,0,1
+2025-10-29T00:57:28.788421,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,24,0,0,1
+2025-10-29T00:58:40.189197,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,1,13,Export the project as XMI or PDF and save it,60,0,0,1
+2025-10-29T00:59:04.039322,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,0,Open a new project in StarUML,5,0,0,1
+2025-10-29T00:59:37.085897,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,1,Create a new Use Case Diagram in the project,16,0,0,1
+2025-10-29T00:59:51.369504,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,2,Add one Actor to the Use Case Diagram,9,0,0,1
+2025-10-29T01:00:12.672998,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,3,Add one Use Case and connect it to the Actor,15,0,0,1
+2025-10-29T01:00:36.761988,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,4,Rename the elements (Actor and Use Case) with meaningful names,18,0,0,1
+2025-10-29T01:01:15.281260,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,5,"Add multiple Actors (e.g., User and Administrator)",34,0,0,1
+2025-10-29T01:02:02.895481,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,6,Add include/extend relationships between Use Cases,14,0,0,1
+2025-10-29T01:02:20.176171,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,7,Create a new Class Diagram in the same project,11,0,0,1
+2025-10-29T01:02:43.271744,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,8,Add a Class with attributes and methods,16,0,0,1
+2025-10-29T01:03:22.068741,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,9,Add an Association relationship between two Classes,34,0,0,1
+2025-10-29T01:03:55.908035,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,10,Add a Generalization (Inheritance) relationship between two Classes,28,0,0,1
+2025-10-29T01:04:13.585037,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,11,Create a new Sequence Diagram and add it to the project,13,0,0,1
+2025-10-29T01:05:49.327281,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,38,0,0,1
+2025-10-29T01:06:39.901515,2c2e46fa-c9ab-4cf2-8632-9ba593cf58af,6511e688100fd33b378fa688,Male,20–29,Computer Science,StarUML,None,2,13,Export the project as XMI or PDF and save it,46,0,0,1
+2025-10-29T01:25:39.519047,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,0,Open a new project in StarUML,39,0,1,1
+2025-10-29T01:26:53.316954,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,1,Create a new Use Case Diagram in the project,52,0,2,1
+2025-10-29T01:28:08.536251,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,2,Add one Actor to the Use Case Diagram,65,0,0,1
+2025-10-29T01:29:42.377204,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,3,Add one Use Case and connect it to the Actor,84,1,2,0
+2025-10-29T01:30:24.236511,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,4,Rename the elements (Actor and Use Case) with meaningful names,30,0,0,1
+2025-10-29T01:31:15.512264,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,5,"Add multiple Actors (e.g., User and Administrator)",24,0,2,0
+2025-10-29T01:31:48.360423,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,6,Add include/extend relationships between Use Cases,17,0,0,1
+2025-10-29T01:32:29.803631,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,7,Create a new Class Diagram in the same project,35,0,0,1
+2025-10-29T01:33:33.672129,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,8,Add a Class with attributes and methods,58,2,0,0
+2025-10-29T01:34:13.697855,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,9,Add an Association relationship between two Classes,33,0,0,0
+2025-10-29T01:35:25.524794,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,10,Add a Generalization (Inheritance) relationship between two Classes,60,0,0,1
+2025-10-29T01:35:58.673124,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,11,Create a new Sequence Diagram and add it to the project,5,0,0,1
+2025-10-29T01:36:54.884114,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,24,3,0,0
+2025-10-29T01:37:57.310594,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,1,13,Export the project as XMI or PDF and save it,55,0,0,0
+2025-10-29T01:38:26.046900,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,0,Open a new project in StarUML,17,0,0,1
+2025-10-29T01:38:57.495628,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,1,Create a new Use Case Diagram in the project,23,0,0,1
+2025-10-29T01:39:25.978437,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,2,Add one Actor to the Use Case Diagram,15,0,0,1
+2025-10-29T01:39:57.667397,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,3,Add one Use Case and connect it to the Actor,25,0,0,1
+2025-10-29T01:40:33.376479,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,4,Rename the elements (Actor and Use Case) with meaningful names,30,0,0,1
+2025-10-29T01:41:01.192336,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,5,"Add multiple Actors (e.g., User and Administrator)",21,0,0,1
+2025-10-29T01:41:23.389146,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,6,Add include/extend relationships between Use Cases,15,0,0,1
+2025-10-29T01:41:38.590471,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,7,Create a new Class Diagram in the same project,8,0,0,1
+2025-10-29T01:42:50.654965,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,8,Add a Class with attributes and methods,21,0,0,1
+2025-10-29T01:43:21.335141,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,9,Add an Association relationship between two Classes,23,0,0,1
+2025-10-29T01:43:43.129983,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,10,Add a Generalization (Inheritance) relationship between two Classes,16,0,0,1
+2025-10-29T01:44:01.873952,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,11,Create a new Sequence Diagram and add it to the project,12,0,0,1
+2025-10-29T01:44:32.449455,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,24,1,0,0
+2025-10-29T01:45:00.457038,c5d6ffe7-9e5e-43ed-a2f9-2f074beb3ead,68c03814183fb278ae8ac1c9,Male,20–29,Dentistry,StarUML,Beginner,2,13,Export the project as XMI or PDF and save it,6,0,0,1
+2025-10-29T03:45:57.425915,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,0,Open a new project in StarUML,68,4,0,0
+2025-10-29T03:47:33.688794,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,1,Create a new Use Case Diagram in the project,86,4,0,0
+2025-10-29T03:49:27.634460,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,2,Add one Actor to the Use Case Diagram,57,3,0,0
+2025-10-29T03:51:22.631939,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,3,Add one Use Case and connect it to the Actor,104,0,1,0
+2025-10-29T03:52:49.804969,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,4,Rename the elements (Actor and Use Case) with meaningful names,80,3,0,0
+2025-10-29T03:53:51.303163,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,5,"Add multiple Actors (e.g., User and Administrator)",52,0,0,0
+2025-10-29T03:54:59.733195,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,6,Add include/extend relationships between Use Cases,61,0,1,0
+2025-10-29T03:56:00.493671,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,7,Create a new Class Diagram in the same project,49,0,0,0
+2025-10-29T03:57:44.576322,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,8,Add a Class with attributes and methods,97,0,0,0
+2025-10-29T03:59:02.396450,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,9,Add an Association relationship between two Classes,69,0,0,0
+2025-10-29T03:59:34.975266,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,10,Add a Generalization (Inheritance) relationship between two Classes,23,0,0,0
+2025-10-29T04:00:19.029690,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,11,Create a new Sequence Diagram and add it to the project,27,0,0,1
+2025-10-29T04:01:36.370827,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,44,0,0,0
+2025-10-29T04:01:53.134933,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,1,13,Export the project as XMI or PDF and save it,10,0,0,1
+2025-10-29T04:02:24.186147,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,0,Open a new project in StarUML,23,0,0,1
+2025-10-29T04:02:51.396185,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,1,Create a new Use Case Diagram in the project,21,1,0,1
+2025-10-29T04:03:52.724769,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,2,Add one Actor to the Use Case Diagram,53,2,0,0
+2025-10-29T04:04:38.867642,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,3,Add one Use Case and connect it to the Actor,39,0,1,0
+2025-10-29T04:05:57.090678,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,4,Rename the elements (Actor and Use Case) with meaningful names,73,3,0,0
+2025-10-29T04:06:23.287698,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,5,"Add multiple Actors (e.g., User and Administrator)",20,0,0,1
+2025-10-29T04:07:55.875970,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,6,Add include/extend relationships between Use Cases,87,0,1,0
+2025-10-29T04:09:05.561030,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,7,Create a new Class Diagram in the same project,61,0,0,0
+2025-10-29T04:10:08.144939,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,8,Add a Class with attributes and methods,56,0,0,1
+2025-10-29T04:10:56.417550,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,9,Add an Association relationship between two Classes,42,0,0,1
+2025-10-29T04:11:53.531201,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,10,Add a Generalization (Inheritance) relationship between two Classes,48,0,0,0
+2025-10-29T04:12:44.055657,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,11,Create a new Sequence Diagram and add it to the project,42,0,0,1
+2025-10-29T04:13:28.627033,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,37,0,0,1
+2025-10-29T04:13:45.395223,1af76353-f859-4d22-98f0-e2ed5c1d46cf,666061eeffa611f991735eab,Female,20–29,Daya Engineering,StarUML,None,2,13,Export the project as XMI or PDF and save it,10,0,0,1
+2025-10-29T07:32:15.901975,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,0,Open a new project in StarUML,64,1,1,0
+2025-10-29T07:33:04.112901,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,1,Create a new Use Case Diagram in the project,41,0,1,1
+2025-10-29T07:33:57.457991,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,2,Add one Actor to the Use Case Diagram,46,0,1,0
+2025-10-29T07:56:51.501797,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,3,Add one Use Case and connect it to the Actor,47,0,0,1
+2025-10-29T07:57:48.430701,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,4,Rename the elements (Actor and Use Case) with meaningful names,47,0,0,0
+2025-10-29T07:58:28.375476,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,5,"Add multiple Actors (e.g., User and Administrator)",33,0,0,1
+2025-10-29T07:59:17.984272,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,6,Add include/extend relationships between Use Cases,40,0,0,1
+2025-10-29T07:59:59.815691,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,7,Create a new Class Diagram in the same project,34,0,0,1
+2025-10-29T08:02:50.515336,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,8,Add a Class with attributes and methods,128,0,1,0
+2025-10-29T08:04:10.534636,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,9,Add an Association relationship between two Classes,54,0,0,1
+2025-10-29T08:05:16.919463,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,10,Add a Generalization (Inheritance) relationship between two Classes,47,0,0,1
+2025-10-29T08:06:14.978652,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,11,Create a new Sequence Diagram and add it to the project,48,0,0,1
+2025-10-29T08:07:04.252630,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,40,0,0,1
+2025-10-29T08:07:51.417380,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,1,13,Export the project as XMI or PDF and save it,40,0,0,1
+2025-10-29T08:08:47.799526,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,0,Open a new project in StarUML,50,0,0,1
+2025-10-29T08:09:53.995625,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,1,Create a new Use Case Diagram in the project,42,0,0,1
+2025-10-29T08:10:48.132937,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,2,Add one Actor to the Use Case Diagram,41,0,0,0
+2025-10-29T08:12:00.905782,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,3,Add one Use Case and connect it to the Actor,58,0,0,1
+2025-10-29T08:12:26.820810,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,4,Rename the elements (Actor and Use Case) with meaningful names,19,0,0,1
+2025-10-29T08:13:09.278067,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,5,"Add multiple Actors (e.g., User and Administrator)",36,0,0,1
+2025-10-29T08:14:05.515262,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,6,Add include/extend relationships between Use Cases,37,0,0,1
+2025-10-29T08:15:14.796525,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,7,Create a new Class Diagram in the same project,61,0,0,1
+2025-10-29T08:16:00.100532,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,8,Add a Class with attributes and methods,39,0,0,1
+2025-10-29T08:16:43.481188,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,9,Add an Association relationship between two Classes,38,0,0,1
+2025-10-29T08:17:23.263924,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,10,Add a Generalization (Inheritance) relationship between two Classes,33,0,0,1
+2025-10-29T08:18:46.226132,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,11,Create a new Sequence Diagram and add it to the project,77,0,0,1
+2025-10-29T08:20:57.942573,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,126,0,1,0
+2025-10-29T08:22:05.830415,40522828-261b-40bf-ace4-2a79bc2aafe4,Motlagomang mosimane,Female,20–29,Information technology,StarUML,Beginner,2,13,Export the project as XMI or PDF and save it,62,0,0,1
+2025-10-29T09:54:54.087954,9952376e-9fa7-4d3a-8b48-27a39cc9ed76,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Beginner,1,0,Open a new project in StarUML,3,0,0,1
+2025-10-29T10:03:35.166671,4ab21d4c-72c1-47c3-bd2b-4cb5a64fd837,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,0,Open a new project in StarUML,401,1,3,0
+2025-10-29T10:13:33.653097,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,1,Create a new Use Case Diagram in the project,97,0,0,1
+2025-10-29T10:17:42.671708,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,2,Add one Actor to the Use Case Diagram,123,0,0,1
+2025-10-29T10:22:39.219981,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,3,Add one Use Case and connect it to the Actor,67,0,0,1
+2025-10-29T10:24:03.852649,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,4,Rename the elements (Actor and Use Case) with meaningful names,65,0,0,1
+2025-10-29T10:25:41.300565,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,5,"Add multiple Actors (e.g., User and Administrator)",82,0,0,1
+2025-10-29T10:30:29.571158,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,6,Add include/extend relationships between Use Cases,129,0,0,1
+2025-10-29T10:33:48.857384,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,7,Create a new Class Diagram in the same project,65,0,0,1
+2025-10-29T10:47:53.163366,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,8,Add a Class with attributes and methods,188,0,0,1
+2025-10-29T10:51:04.782647,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,9,Add an Association relationship between two Classes,173,0,1,0
+2025-10-29T10:54:03.339050,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,10,Add a Generalization (Inheritance) relationship between two Classes,102,0,0,1
+2025-10-29T10:59:18.133810,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,11,Create a new Sequence Diagram and add it to the project,73,0,2,0
+2025-10-29T11:00:49.423337,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,74,0,0,1
+2025-10-29T11:04:38.619660,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,13,Export the project as XMI or PDF and save it,105,0,0,1
+2025-10-29T11:06:18.504470,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,0,Open a new project in StarUML,53,0,0,1
+2025-10-29T11:07:19.832587,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,1,Create a new Use Case Diagram in the project,26,0,0,1
+2025-10-29T11:08:43.570342,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,2,Add one Actor to the Use Case Diagram,69,0,0,1
+2025-10-29T11:10:26.071507,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,3,Add one Use Case and connect it to the Actor,87,0,0,1
+2025-10-29T11:16:24.459378,6047ff9e-fa3a-4ad3-8a94-dea180dac66d,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,4,Rename the elements (Actor and Use Case) with meaningful names,67,0,0,1
+2025-10-29T11:25:39.935825,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,0,Open a new project in StarUML,5,0,0,1
+2025-10-29T11:30:49.693444,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,1,Create a new Use Case Diagram in the project,4,0,0,1
+2025-10-29T11:31:05.866112,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,2,Add one Actor to the Use Case Diagram,4,0,0,1
+2025-10-29T11:31:33.868133,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,3,Add one Use Case and connect it to the Actor,19,0,0,1
+2025-10-29T11:32:23.783328,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,5,"Add multiple Actors (e.g., User and Administrator)",61,0,0,1
+2025-10-29T11:33:48.194216,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,6,Add include/extend relationships between Use Cases,9,0,0,1
+2025-10-29T11:34:48.593274,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,7,Create a new Class Diagram in the same project,48,0,0,1
+2025-10-29T11:35:49.304230,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,8,Add a Class with attributes and methods,46,0,0,1
+2025-10-29T11:36:41.146049,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,9,Add an Association relationship between two Classes,42,0,0,1
+2025-10-29T11:37:33.211520,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,10,Add a Generalization (Inheritance) relationship between two Classes,39,0,0,1
+2025-10-29T11:38:17.345140,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,11,Create a new Sequence Diagram and add it to the project,33,0,0,1
+2025-10-29T11:40:44.227614,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,79,0,0,1
+2025-10-29T11:41:48.038751,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,1,13,Export the project as XMI or PDF and save it,44,0,0,1
+2025-10-29T11:42:35.492241,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,0,Open a new project in StarUML,25,0,0,1
+2025-10-29T11:43:03.232614,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,1,Create a new Use Case Diagram in the project,21,0,0,1
+2025-10-29T11:43:58.774597,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,2,Add one Actor to the Use Case Diagram,28,0,0,1
+2025-10-29T11:44:26.830431,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,3,Add one Use Case and connect it to the Actor,23,0,0,1
+2025-10-29T11:45:14.079449,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,4,Rename the elements (Actor and Use Case) with meaningful names,42,0,0,1
+2025-10-29T11:45:45.884903,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,5,"Add multiple Actors (e.g., User and Administrator)",24,0,0,1
+2025-10-29T11:46:22.381097,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,6,Add include/extend relationships between Use Cases,31,0,0,1
+2025-10-29T11:46:53.372090,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,7,Create a new Class Diagram in the same project,24,0,0,1
+2025-10-29T11:47:35.759194,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,8,Add a Class with attributes and methods,37,0,0,1
+2025-10-29T11:48:12.875803,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,9,Add an Association relationship between two Classes,31,0,0,1
+2025-10-29T11:49:01.061263,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,10,Add a Generalization (Inheritance) relationship between two Classes,43,0,0,1
+2025-10-29T11:49:24.032744,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,11,Create a new Sequence Diagram and add it to the project,15,0,0,1
+2025-10-29T11:49:54.628924,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,24,0,0,1
+2025-10-29T11:50:37.721849,f93ecc1b-f599-4b1b-b270-74e51df2b23e,664e326b5579c6f6ca3fd1ff,Male,30–39,Structural engineer.,StarUML,Intermediate,2,13,Export the project as XMI or PDF and save it,38,0,0,1
+2025-10-29T12:04:06.987965,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,0,Open a new project in StarUML,167,0,0,0
+2025-10-29T12:09:41.542030,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,1,Create a new Use Case Diagram in the project,316,0,0,0
+2025-10-29T12:15:45.893195,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,2,Add one Actor to the Use Case Diagram,350,0,0,0
+2025-10-29T12:15:46.784929,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,2,Add one Actor to the Use Case Diagram,350,0,0,0
+2025-10-29T12:21:04.794544,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,3,Add one Use Case and connect it to the Actor,308,0,0,0
+2025-10-29T12:22:24.081567,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,4,Rename the elements (Actor and Use Case) with meaningful names,73,0,1,0
+2025-10-29T12:24:42.209772,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,5,"Add multiple Actors (e.g., User and Administrator)",79,0,0,1
+2025-10-29T12:26:45.139413,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,6,Add include/extend relationships between Use Cases,103,0,0,1
+2025-10-29T12:30:03.291157,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,7,Create a new Class Diagram in the same project,190,0,0,1
+2025-10-29T12:34:44.088255,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,8,Add a Class with attributes and methods,235,0,0,1
+2025-10-29T12:38:53.772141,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,9,Add an Association relationship between two Classes,238,0,0,1
+2025-10-29T12:42:03.571327,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,10,Add a Generalization (Inheritance) relationship between two Classes,184,0,0,1
+2025-10-29T12:42:04.520550,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,10,Add a Generalization (Inheritance) relationship between two Classes,184,0,0,1
+2025-10-29T12:46:27.610344,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,11,Create a new Sequence Diagram and add it to the project,253,0,0,1
+2025-10-29T12:53:13.412748,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,398,0,0,1
+2025-10-29T12:57:31.227333,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,1,13,Export the project as XMI or PDF and save it,251,0,0,1
+2025-10-29T13:02:14.527862,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,0,Open a new project in StarUML,166,0,0,1
+2025-10-29T13:06:41.414712,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,1,Create a new Use Case Diagram in the project,260,0,0,1
+2025-10-29T13:09:24.901688,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,2,Add one Actor to the Use Case Diagram,157,0,0,1
+2025-10-29T13:13:05.267912,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,3,Add one Use Case and connect it to the Actor,214,0,0,1
+2025-10-29T13:16:19.410062,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,4,Rename the elements (Actor and Use Case) with meaningful names,189,0,0,1
+2025-10-29T13:20:28.257951,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,5,"Add multiple Actors (e.g., User and Administrator)",232,0,0,1
+2025-10-29T13:23:18.739013,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,6,Add include/extend relationships between Use Cases,165,0,0,1
+2025-10-29T13:27:22.672079,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,7,Create a new Class Diagram in the same project,237,0,0,1
+2025-10-29T13:30:40.804737,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,8,Add a Class with attributes and methods,189,0,0,1
+2025-10-29T13:34:33.379314,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,9,Add an Association relationship between two Classes,227,0,0,1
+2025-10-29T13:40:21.483885,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,10,Add a Generalization (Inheritance) relationship between two Classes,342,0,0,1
+2025-10-29T13:45:47.721420,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,11,Create a new Sequence Diagram and add it to the project,191,0,0,1
+2025-10-29T13:48:21.000288,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,12,Represent a message exchange (Message Passing) between two objects in the Sequence Diagram,123,0,0,1
+2025-10-29T13:50:29.083453,06312261-a67a-4aa2-b6b9-82f845228ac4,uche,Male,40+,Doctor,StarUML,Intermediate,2,13,Export the project as XMI or PDF and save it,113,0,0,1
