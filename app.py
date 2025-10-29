@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash, send_file
+from flask import Flask, render_template, request, redirect, url_for, session, flash, send_file, Response
 from datetime import datetime
-import csv, os, json, uuid, argparse, shutil
+import csv, os, json, uuid, argparse, shutil, glob, io, time
 
 SESSIONS_PER_APP = 2
 
@@ -182,12 +182,17 @@ def thanks():
         return redirect(url_for("home"))
     return render_template("thanks.html")
 
+# يمنع الكاش على كل الردود
+@app.after_request
+def add_no_cache_headers(resp):
+    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    return resp
+
+# تجميع كل ملفات data/*.csv في ملف واحد لحظة الطلب
 @app.route("/download-data")
 def download_data():
-    import io, csv, time, glob
-    from flask import Response
-
-    # نجمع كل ملفات CSV داخل مجلّد data/
     csv_paths = sorted(glob.glob(os.path.join(DATA_DIR, "*.csv")))
 
     output = io.StringIO()
@@ -200,19 +205,16 @@ def download_data():
             continue
         with open(p, "r", encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f)
-            # تحديد الأعمدة من أول ملف فيه عناوين
             if fieldnames is None and reader.fieldnames:
                 fieldnames = reader.fieldnames
                 writer = csv.DictWriter(output, fieldnames=fieldnames)
                 writer.writeheader()
-            # لو الملف الحالي عناوينه مختلفة أو فاضية، نتخطّاه
             if not reader.fieldnames or reader.fieldnames != fieldnames:
                 continue
             for row in reader:
                 writer.writerow(row)
                 total_rows += 1
 
-    # لو ما لقينا أي صف (أو ما فيه ملفات)، رجّع ملف فاضي بعناوين افتراضية
     if total_rows == 0:
         fieldnames = [
             "timestamp_iso","session_id",
@@ -238,19 +240,91 @@ def download_data():
         "Expires": "0",
     }
     return Response(csv_bytes, headers=headers)
+
+# نسخة تحميل قوية بكسر كاش إضافي
 @app.route("/download-data-now")
 def download_data_now():
-    import io, csv, time, glob, uuid
-    from flask import Response
-    ...
+    csv_paths = sorted(glob.glob(os.path.join(DATA_DIR, "*.csv")))
+
+    output = io.StringIO()
+    writer = None
+    fieldnames = None
+    total_rows = 0
+
+    for p in csv_paths:
+        if not os.path.exists(p):
+            continue
+        with open(p, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            if fieldnames is None and reader.fieldnames:
+                fieldnames = reader.fieldnames
+                writer = csv.DictWriter(output, fieldnames=fieldnames)
+                writer.writeheader()
+            if not reader.fieldnames or reader.fieldnames != fieldnames:
+                continue
+            for row in reader:
+                writer.writerow(row)
+                total_rows += 1
+
+    if total_rows == 0:
+        fieldnames = [
+            "timestamp_iso","session_id",
+            "user_name","gender","age_group","major",
+            "app_name","app_experience","trial_number",
+            "task_index","task_description",
+            "duration_seconds","errors_count","help_count",
+            "easy_binary"
+        ]
+        writer = csv.DictWriter(output, fieldnames=fieldnames)
+        writer.writeheader()
+
+    csv_bytes = output.getvalue().encode("utf-8")
+    output.close()
+
+    filename = f"responses_{int(time.time())}.csv"
+    headers = {
+        "Content-Disposition": f'attachment; filename="{filename}"',
+        "Content-Type": "text/csv; charset=utf-8",
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "X-Export-Id": str(uuid.uuid4()),
+        "ETag": str(uuid.uuid4()),
+    }
     return Response(csv_bytes, headers=headers)
 
-@app.after_request
-def add_no_cache_headers(resp):
-    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    resp.headers["Pragma"] = "no-cache"
-    resp.headers["Expires"] = "0"
-    return resp
+# مسار تشخيص يُظهر عدد الصفوف في كل ملف داخل data/
+@app.route("/debug-data-info")
+def debug_data_info():
+    info = {"files": [], "total_rows": 0, "server_time": int(time.time())}
+    for p in sorted(glob.glob(os.path.join(DATA_DIR, "*.csv"))):
+        rows = 0
+        fields = []
+        err = None
+        try:
+            with open(p, "r", encoding="utf-8", newline="") as f:
+                r = csv.DictReader(f)
+                fields = r.fieldnames or []
+                for _ in r:
+                    rows += 1
+        except Exception as e:
+            err = str(e)
+        entry = {"path": p, "rows": rows, "fields": fields}
+        if err:
+            entry["error"] = err
+        else:
+            try:
+                entry["mtime"] = os.path.getmtime(p)
+            except:
+                pass
+        info["files"].append(entry)
+        info["total_rows"] += rows
+
+    return app.response_class(
+        response=json.dumps(info, ensure_ascii=False, indent=2),
+        status=200,
+        mimetype="application/json"
+    )
 
 # تشغيل التطبيق
 def main():
@@ -260,10 +334,6 @@ def main():
     parser.add_argument("--debug", action="store_true", default=True)
     args = parser.parse_args()
     app.run(debug=args.debug, host=args.host, port=args.port)
-@app.route("/debug-data-info")
-def debug_data_info():
-    ...
-    return app.response_class(...)
 
 if __name__ == "__main__":
     main()
