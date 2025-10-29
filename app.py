@@ -238,7 +238,19 @@ def download_data():
         "Expires": "0",
     }
     return Response(csv_bytes, headers=headers)
+@app.route("/download-data-now")
+def download_data_now():
+    import io, csv, time, glob, uuid
+    from flask import Response
+    ...
+    return Response(csv_bytes, headers=headers)
 
+@app.after_request
+def add_no_cache_headers(resp):
+    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    return resp
 
 # تشغيل التطبيق
 def main():
@@ -248,6 +260,10 @@ def main():
     parser.add_argument("--debug", action="store_true", default=True)
     args = parser.parse_args()
     app.run(debug=args.debug, host=args.host, port=args.port)
+@app.route("/debug-data-info")
+def debug_data_info():
+    ...
+    return app.response_class(...)
 
 if __name__ == "__main__":
     main()
