@@ -1,74 +1,140 @@
-{% extends "base.html" %}
-{% set enable_submit = enable_submit|default(false) %}
-{% block content %}
-<!-- عرض رقم الجلسة -->
-<div style="text-align:right; font-weight:bold; margin-bottom:10px; opacity:0.8;">
-    Session {{ trial_number }} / {{ sessions_per_app }}
-</div>
-
-<div class="card shadow-sm">
-  <div class="card-body">
-    <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
-      <h5 class="card-title mb-0">{{ app_name }}</h5>
-          <div class="text-end mb-2">
-            <span class="badge bg-primary" style="font-size:14px;">
-            Session {{ trial_number }} / {{ sessions_per_app }}
-            </span>
-            <span class="badge bg-secondary" style="font-size:14px;">
-                Task {{ idx + 1 }} of {{ total }}
-            </span>
-           </div>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Learnability Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body{background:#f7f7fb}
+    .card{border-radius:14px}
+    .badge{vertical-align:middle}
+    .btn-outline-danger, .btn-outline-primary{min-width:84px}
+    .counter{display:inline-block; min-width:28px; text-align:center}
+    .timer{font-weight:700; background:#111; color:#fff; padding:4px 10px; border-radius:8px}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h5">Learnability Test</span>
+    <div class="text-end">
+      <span class="badge bg-primary me-2">Session {{ trial_number }} / {{ sessions_per_app }}</span>
+      <span class="badge bg-secondary">Task {{ idx + 1 }} of {{ total }}</span>
     </div>
+  </div>
+</nav>
 
-    <p class="lead">{{ task_text }}</p>
+<div class="container my-4" style="max-width:980px;">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="mb-3">
+        {% for category, message in messages %}
+          <div class="alert alert-{{ 'info' if category=='message' else category }} mb-2" role="alert">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
 
-    <form id="taskForm" method="POST">
-      <input type="hidden" name="duration_seconds" id="duration_seconds" value="0">
-      <input type="hidden" name="errors_count" id="errors_count" value="0">
-      <input type="hidden" name="help_count" id="help_count" value="0">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h5 class="mb-1">{{ app_name }}</h5>
+      <p class="text-muted mb-4">{{ task_text }}</p>
 
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <button class="btn btn-outline-primary" type="button" id="startBtn">Start</button>
-            <button class="btn btn-outline-secondary" type="button" id="finishBtn" disabled>Finish</button>
-            <span id="timerBadge" class="badge bg-dark">00:00</span>
+      <form method="post" id="taskForm">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <button type="button" id="startBtn" class="btn btn-outline-primary btn-sm">Start</button>
+          <button type="button" id="finishBtn" class="btn btn-outline-secondary btn-sm" disabled>Finish</button>
+          <span class="timer" id="timer">00:00</span>
 
-            <div class="ms-3 btn-group" role="group">
-              <button class="btn btn-outline-danger" type="button" id="errorPlus" disabled>Errors +</button>
-              <span class="btn btn-light disabled" id="errorsDisplay">0</span>
-            </div>
+          <button type="button" id="errPlus" class="btn btn-outline-danger btn-sm ms-2">Errors +</button>
+          <span class="counter" id="errCount">0</span>
 
-            <div class="ms-3 btn-group" role="group">
-              <button class="btn btn-outline-primary" type="button" id="helpPlus" disabled>Help +</button>
-              <span class="btn btn-light disabled" id="helpDisplay">0</span>
-            </div>
+          <button type="button" id="helpPlus" class="btn btn-outline-primary btn-sm">Help +</button>
+          <span class="counter" id="helpCount">0</span>
+        </div>
+
+        <input type="hidden" name="duration_seconds" id="duration_seconds" value="0"/>
+        <input type="hidden" name="errors_count" id="errors_count" value="0"/>
+        <input type="hidden" name="help_count" id="help_count" value="0"/>
+
+        <div class="mb-3">
+          <h6 class="mb-2">Task difficulty</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="easy" id="easyYes" value="easy">
+            <label class="form-check-label" for="easyYes">Easy</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="easy" id="easyNo" value="not_easy">
+            <label class="form-check-label" for="easyNo">Not Easy</label>
           </div>
         </div>
-      </div>
 
-      <hr>
-
-      <div class="mt-2">
-        <label class="form-label fw-bold">Task difficulty</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="easy" id="easyYes" value="easy">
-          <label class="form-check-label" for="easyYes">Easy</label>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn btn-primary">Submit &amp; Next</button>
+          <a href="{{ url_for('choose_app') }}" class="btn btn-outline-dark">Main menu</a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="easy" id="easyNo" value="not_easy">
-          <label class="form-check-label" for="easyNo">Not Easy</label>
-        </div>
-      </div>
-
-      <div class="mt-4 d-flex gap-2">
-        <button class="btn btn-primary" type="submit" id="submitBtn" {% if not enable_submit %}disabled{% endif %}>
-          Submit & Next
-        </button>
-        <a class="btn btn-outline-secondary btn-mainmenu" href="{{ url_for('choose_app') }}">Main menu</a>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
-{% endblock %}
+
+<script>
+(function(){
+  let started=false, startTs=0, timerId=null;
+  let elapsedSec=0, err=0, help=0;
+
+  const $ = (id)=>document.getElementById(id);
+  const startBtn = $('startBtn');
+  const finishBtn = $('finishBtn');
+  const timer = $('timer');
+  const dur = $('duration_seconds');
+  const errPlus = $('errPlus');
+  const helpPlus = $('helpPlus');
+  const errCount = $('errCount');
+  const helpCount = $('helpCount');
+
+  function fmt(s){ s=Math.max(0,Math.floor(s)); const m=String(Math.floor(s/60)).padStart(2,'0'); const ss=String(s%60).padStart(2,'0'); return m+':'+ss; }
+
+  function tick(){
+    const now = Date.now();
+    elapsedSec = Math.floor((now - startTs)/1000);
+    timer.textContent = fmt(elapsedSec);
+    dur.value = elapsedSec;
+  }
+
+  startBtn.addEventListener('click', function(){
+    if(started) return;
+    started=true;
+    startTs = Date.now();
+    timerId = setInterval(tick, 500);
+    startBtn.disabled = true;
+    finishBtn.disabled = false;
+  });
+
+  finishBtn.addEventListener('click', function(){
+    if(!started) return;
+    started=false;
+    clearInterval(timerId);
+    tick();
+    finishBtn.disabled = true;
+  });
+
+  errPlus.addEventListener('click', function(){
+    err += 1; errCount.textContent = err; $('errors_count').value = err;
+  });
+
+  helpPlus.addEventListener('click', function(){
+    help += 1; helpCount.textContent = help; $('help_count').value = help;
+  });
+
+  // احتياط: لو ما ضغط Start ثم Submit، نحفظ القيم الحالية
+  document.getElementById('taskForm').addEventListener('submit', function(){
+    if(started){ clearInterval(timerId); tick(); }
+    $('errors_count').value = err;
+    $('help_count').value = help;
+  });
+})();
+</script>
+</body>
+</html>
