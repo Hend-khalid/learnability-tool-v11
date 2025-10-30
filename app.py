@@ -14,11 +14,9 @@ with open(os.path.join("config", "apps_tasks.json"), "r", encoding="utf-8") as f
 with open(os.path.join("config", "app_downloads.json"), "r", encoding="utf-8") as f:
     APP_DOWNLOADS = json.load(f)
 
-# 📦 مجلد البيانات - يدعم التخزين الدائم (Persistent Disk)
 DATA_DIR = os.environ.get("DATA_DIR", "/opt/render/project/src/data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# 🔍 قراءة رابط الساندبوكس
 def _load_sandbox_url():
     try:
         with open(os.path.join("config", "sandbox_url.txt"), "r", encoding="utf-8") as f:
@@ -31,7 +29,6 @@ def inject_globals():
     return dict(SANDBOX_URL=_load_sandbox_url())
 
 def ensure_csv(path):
-    """يتأكد من وجود ملف CSV ويضيف العناوين إن لم يكن موجودًا."""
     if not os.path.exists(path):
         with open(path, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
@@ -45,7 +42,7 @@ def ensure_csv(path):
                 "easy_binary"
             ])
 
-# الصفحة الرئيسية (البيانات الشخصية)
+# الصفحة الرئيسية
 @app.route("/", methods=["GET", "POST"])
 def home():
     if request.method == "POST":
@@ -64,7 +61,9 @@ def home():
         session["gender"] = gender
         session["age_group"] = age_group
         session["major"] = major
+        session["completed_apps"] = []
         return redirect(url_for("choose_app"))
+
     return render_template("home.html")
 
 # اختيار التطبيق
@@ -72,43 +71,47 @@ def home():
 def choose_app():
     if "user_name" not in session:
         return redirect(url_for("home"))
+
     all_apps = list(APPS_TASKS.keys())
-completed = session.get("completed_apps", [])
-remaining_apps = [a for a in all_apps if a not in completed]
+    completed = session.get("completed_apps", [])
+    remaining_apps = [a for a in all_apps if a not in completed]
 
-# لو خلص كل التطبيقات → شكراً
-if not remaining_apps:
-    flash("You have completed all applications. Thank you!", "success")
-    return redirect(url_for("thanks"))
+    # أنهى كل التطبيقات
+    if not remaining_apps:
+        return redirect(url_for("thanks"))
 
-apps = remaining_apps
+    downloads = APP_DOWNLOADS
 
-downloads = APP_DOWNLOADS
-if request.method == "POST":
+    if request.method == "POST":
         app_name = request.form.get("app_name")
         app_experience = request.form.get("app_experience")
-        if app_name not in APPS_TASKS:
+
+        if app_name not in remaining_apps:
             flash("Please select a valid application.", "danger")
-            return render_template("choose_app.html", apps=apps, downloads=downloads)
+            return render_template("choose_app.html", apps=remaining_apps, downloads=downloads)
+
         if app_experience not in ["None","Beginner","Intermediate","Advanced"]:
-            flash("Please select your experience level for the chosen application.", "warning")
-            return render_template("choose_app.html", apps=apps, downloads=downloads, selected_app=app_name)
+            flash("Please select your experience level.", "warning")
+            return render_template("choose_app.html", apps=remaining_apps, downloads=downloads, selected_app=app_name)
+
         session["current_app"] = app_name
         session["app_experience"] = app_experience
         session["trial_number"] = 1
         session["task_index"] = 0
         return redirect(url_for("task", idx=0))
-return render_template("choose_app.html", apps=apps, downloads=downloads)
+
+    return render_template("choose_app.html", apps=remaining_apps, downloads=downloads)
 
 # صفحة المهام
 @app.route("/task/<int:idx>", methods=["GET", "POST"])
 def task(idx):
     if "user_name" not in session or "current_app" not in session:
         return redirect(url_for("home"))
+
     app_name = session["current_app"]
     tasks = APPS_TASKS.get(app_name, [])
+
     if idx < 0 or idx >= len(tasks):
-        flash("You have completed all tasks for this application.", "success")
         return redirect(url_for("choose_app"))
 
     if request.method == "POST":
@@ -117,34 +120,23 @@ def task(idx):
         help_count = request.form.get("help_count", "0").strip()
         easy = request.form.get("easy", "").strip()
 
-        try:
-            duration_seconds = int(float(duration))
-        except:
-            duration_seconds = 0
-        try:
-            errors_count = int(errors)
-        except:
-            errors_count = 0
-        try:
-            help_count_int = int(help_count)
-        except:
-            help_count_int = 0
+        try: duration_seconds = int(float(duration))
+        except: duration_seconds = 0
+        try: errors_count = int(errors)
+        except: errors_count = 0
+        try: help_count_int = int(help_count)
+        except: help_count_int = 0
 
         if easy not in ["easy", "not_easy"]:
             flash("Please select Easy or Not Easy before submitting.", "warning")
-            return render_template("task.html",
-                                   app_name=app_name,
-                                   idx=idx,
-                                   total=len(tasks),
-                                   task_text=tasks[idx],
-                                   trial_number=session.get("trial_number", 1),
-                                   sessions_per_app=SESSIONS_PER_APP)
+            return render_template("task.html", app_name=app_name, idx=idx, total=len(tasks), task_text=tasks[idx])
 
         easy_binary = 1 if easy == "easy" else 0
         trial_number = session.get("trial_number", 1)
 
         csv_path = os.path.join(DATA_DIR, f"{app_name.replace(' ','_')}.csv")
         ensure_csv(csv_path)
+
         with open(csv_path, "a", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow([
@@ -166,52 +158,39 @@ def task(idx):
             ])
 
         next_idx = idx + 1
-        if next_idx >= len(tasks):
-            if session.get("trial_number", 1) < SESSIONS_PER_APP:
-                session["trial_number"] = session.get("trial_number", 1) + 1
-                flash(f"Session {session['trial_number'] - 1} finished. Starting session {session['trial_number']} for {app_name}.", "info")
-                return redirect(url_for("task", idx=0))
-            else:
-    # علّمي هذا التطبيق كمكتمل في جلسة المستخدم
-                completed = set(session.get("completed_apps", []))
-                completed.add(app_name)
-                session["completed_apps"] = list(completed)
 
-    # نظّفي حالة التطبيق الحالي
-    for k in ["current_app", "app_experience", "trial_number", "task_index"]:
-        session.pop(k, None)
+        # جلسة ثانية؟ كمل
+        if next_idx < len(tasks):
+            return redirect(url_for("task", idx=next_idx))
 
-    # إذا خلّص كل التطبيقات -> صفحة الشكر، وإلا يرجع يختار
-    if len(completed) >= len(APPS_TASKS):
-        flash("Finished all assigned applications. Thank you for participating!", "success")
-        return redirect(url_for("thanks"))
-    else:
-    # حفظ التطبيق كمكتمل
+        # جلسة أولى؟ كرري
+        if session.get("trial_number", 1) < SESSIONS_PER_APP:
+            session["trial_number"] += 1
+            return redirect(url_for("task", idx=0))
+
+        # خلّص التطبيق
         completed = set(session.get("completed_apps", []))
         completed.add(app_name)
         session["completed_apps"] = list(completed)
 
-    # تنظيف الجلسة
-    for k in ["current_app", "app_experience", "trial_number", "task_index"]:
-        session.pop(k, None)
+        for k in ["current_app","app_experience","trial_number","task_index"]:
+            session.pop(k, None)
 
-   # إذا خلص كل التطبيقات
-if len(completed) >= len(APPS_TASKS):
-    flash("You finished all applications. Thank you!", "success")
-    return redirect(url_for("thanks"))
-else:
-    flash(f"You finished {app_name}. Please choose the next app.", "success")
-    return redirect(url_for("choose_app"))
+        # خلص الكل؟
+        if len(completed) >= len(APPS_TASKS):
+            return redirect(url_for("thanks"))
+        else:
+            flash("Application completed. Please choose the next application.", "success")
+            return redirect(url_for("choose_app"))
 
+    return render_template("task.html", app_name=app_name, idx=idx, total=len(tasks), task_text=tasks[idx])
 
 # صفحة الشكر
 @app.route("/thanks")
 def thanks():
-    if "user_name" not in session:
-        return redirect(url_for("home"))
     return render_template("thanks.html")
 
-# يمنع الكاش على كل الردود
+# منع الكاش
 @app.after_request
 def add_no_cache_headers(resp):
     resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
@@ -219,12 +198,10 @@ def add_no_cache_headers(resp):
     resp.headers["Expires"] = "0"
     return resp
 
+# تحميل البيانات
 @app.route("/download-data")
 def download_data():
     import tempfile
-    from flask import Response
-
-    # توليد اسم ملف مؤقت فريد كل مرة
     tmp_zip = tempfile.NamedTemporaryFile(delete=False, suffix=f"_{int(time.time())}.zip")
     shutil.make_archive(tmp_zip.name.replace(".zip", ""), "zip", DATA_DIR)
     zip_path = tmp_zip.name
@@ -232,43 +209,26 @@ def download_data():
     @after_this_request
     def cleanup(response):
         try:
-            if os.path.exists(zip_path):
-                os.remove(zip_path)
-        except Exception as e:
-            print("cleanup error:", e)
+            os.remove(zip_path)
+        except: pass
         return response
 
-    resp = send_file(zip_path, as_attachment=True, download_name=f"data_backup_{int(time.time())}.zip")
+    return send_file(zip_path, as_attachment=True, download_name=f"data_backup_{int(time.time())}.zip")
 
-    # 🔥 رؤوس تمنع أي كاش من السيرفر أو المتصفح
-    resp.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    resp.headers["Pragma"] = "no-cache"
-    resp.headers["Expires"] = "0"
-    resp.headers["ETag"] = str(uuid.uuid4())
-    resp.headers["Last-Modified"] = datetime.utcnow()
-    return resp
-
-
-
-# 📊 صفحة فحص الملفات والصفوف
+# فحص البيانات
 @app.route("/debug-data-info")
 def debug_data_info():
     info = {"dir": DATA_DIR, "files": [], "total_rows": 0}
     for p in sorted(glob.glob(os.path.join(DATA_DIR, "*.csv"))):
         rows = 0
-        try:
-            with open(p, "r", encoding="utf-8") as f:
-                r = csv.reader(f)
-                next(r)
-                for _ in r:
-                    rows += 1
-        except:
-            pass
+        with open(p, "r", encoding="utf-8") as f:
+            r = csv.reader(f)
+            next(r, None)
+            for _ in r: rows += 1
         info["files"].append({"name": os.path.basename(p), "rows": rows})
         info["total_rows"] += rows
     return info
 
-# 🚀 تشغيل التطبيق
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"))
