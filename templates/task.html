@@ -9,7 +9,6 @@
     body{background:#f7f7fb}
     .card{border-radius:14px}
     .badge{vertical-align:middle}
-    .btn-outline-danger, .btn-outline-primary{min-width:84px}
     .counter{display:inline-block; min-width:28px; text-align:center}
     .timer{font-weight:700; background:#111; color:#fff; padding:4px 10px; border-radius:8px}
   </style>
@@ -42,30 +41,34 @@
       <p class="text-muted mb-4">{{ task_text }}</p>
 
       <form method="post" id="taskForm">
+        <!-- Controls -->
         <div class="d-flex align-items-center gap-2 mb-3">
           <button type="button" id="startBtn" class="btn btn-outline-primary btn-sm">Start</button>
           <button type="button" id="finishBtn" class="btn btn-outline-secondary btn-sm" disabled>Finish</button>
+
           <span class="timer" id="timer">00:00</span>
 
-          <button type="button" id="errPlus" class="btn btn-outline-danger btn-sm ms-2">Errors +</button>
+          <button type="button" id="errPlus" class="btn btn-outline-danger btn-sm ms-2" disabled>Errors +</button>
           <span class="counter" id="errCount">0</span>
 
-          <button type="button" id="helpPlus" class="btn btn-outline-primary btn-sm">Help +</button>
+          <button type="button" id="helpPlus" class="btn btn-outline-primary btn-sm" disabled>Help +</button>
           <span class="counter" id="helpCount">0</span>
         </div>
 
+        <!-- Hidden fields -->
         <input type="hidden" name="duration_seconds" id="duration_seconds" value="0"/>
-        <input type="hidden" name="errors_count" id="errors_count" value="0"/>
-        <input type="hidden" name="help_count" id="help_count" value="0"/>
+        <input type="hidden" name="errors_count"    id="errors_count"    value="0"/>
+        <input type="hidden" name="help_count"      id="help_count"      value="0"/>
 
+        <!-- Difficulty -->
         <div class="mb-3">
           <h6 class="mb-2">Task difficulty</h6>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="easy" id="easyYes" value="easy">
+            <input class="form-check-input" type="radio" name="easy" id="easyYes" value="easy" disabled>
             <label class="form-check-label" for="easyYes">Easy</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="easy" id="easyNo" value="not_easy">
+            <input class="form-check-input" type="radio" name="easy" id="easyNo" value="not_easy" disabled>
             <label class="form-check-label" for="easyNo">Not Easy</label>
           </div>
         </div>
@@ -93,6 +96,8 @@
   const helpPlus = $('helpPlus');
   const errCount = $('errCount');
   const helpCount = $('helpCount');
+  const easyYes = $('easyYes');
+  const easyNo  = $('easyNo');
 
   function fmt(s){ s=Math.max(0,Math.floor(s)); const m=String(Math.floor(s/60)).padStart(2,'0'); const ss=String(s%60).padStart(2,'0'); return m+':'+ss; }
 
@@ -103,33 +108,45 @@
     dur.value = elapsedSec;
   }
 
+  // Start: فعّل المؤقت، فعّل Errors/Help و Finish فقط
   startBtn.addEventListener('click', function(){
     if(started) return;
-    started=true;
+    started = true;
     startTs = Date.now();
     timerId = setInterval(tick, 500);
+
     startBtn.disabled = true;
     finishBtn.disabled = false;
+    errPlus.disabled = false;
+    helpPlus.disabled = false;
   });
 
+  // Finish: أوقف المؤقت، عطّل Errors/Help/Start وفعّل الاختيار Easy/Not Easy
   finishBtn.addEventListener('click', function(){
     if(!started) return;
-    started=false;
+    started = false;
     clearInterval(timerId);
-    tick();
+    tick(); // ثبّت القيمة الأخيرة
+
     finishBtn.disabled = true;
+    errPlus.disabled = true;
+    helpPlus.disabled = true;
+    startBtn.disabled = true;
+
+    easyYes.disabled = false;
+    easyNo.disabled  = false;
   });
 
+  // عدّادات
   errPlus.addEventListener('click', function(){
     err += 1; errCount.textContent = err; $('errors_count').value = err;
   });
-
   helpPlus.addEventListener('click', function(){
     help += 1; helpCount.textContent = help; $('help_count').value = help;
   });
 
-  // احتياط: لو ما ضغط Start ثم Submit، نحفظ القيم الحالية
-  document.getElementById('taskForm').addEventListener('submit', function(){
+  // عند الإرسال، لو المؤقت شغال نثبّت الزمن، ونضمن القيم
+  document.getElementById('taskForm').addEventListener('submit', function(e){
     if(started){ clearInterval(timerId); tick(); }
     $('errors_count').value = err;
     $('help_count').value = help;
