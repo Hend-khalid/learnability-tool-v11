@@ -98,7 +98,7 @@ if request.method == "POST":
         session["trial_number"] = 1
         session["task_index"] = 0
         return redirect(url_for("task", idx=0))
-    return render_template("choose_app.html", apps=apps, downloads=downloads)
+return render_template("choose_app.html", apps=apps, downloads=downloads)
 
 # صفحة المهام
 @app.route("/task/<int:idx>", methods=["GET", "POST"])
