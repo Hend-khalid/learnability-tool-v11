@@ -195,24 +195,14 @@ def task(idx):
     for k in ["current_app", "app_experience", "trial_number", "task_index"]:
         session.pop(k, None)
 
-    # إذا خلص كل التطبيقات
-    if len(completed) >= len(APPS_TASKS):
-        flash("You finished all applications. Thank you!", "success")
-        return redirect(url_for("thanks"))
-    else:
-        flash(f"You finished {app_name}. Please choose the next app.", "success")
-        return redirect(url_for("choose_app"))
+   # إذا خلص كل التطبيقات
+if len(completed) >= len(APPS_TASKS):
+    flash("You finished all applications. Thank you!", "success")
+    return redirect(url_for("thanks"))
+else:
+    flash(f"You finished {app_name}. Please choose the next app.", "success")
+    return redirect(url_for("choose_app"))
 
-        else:
-            return redirect(url_for("task", idx=next_idx))
-
-    return render_template("task.html",
-                           app_name=app_name,
-                           idx=idx,
-                           total=len(tasks),
-                           task_text=tasks[idx],
-                           trial_number=session.get("trial_number", 1),
-                           sessions_per_app=SESSIONS_PER_APP)
 
 # صفحة الشكر
 @app.route("/thanks")
