@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% set enable_submit = enable_submit|default(false) %}
 {% block content %}
+<!-- عرض رقم الجلسة -->
+<div style="text-align:right; font-weight:bold; margin-bottom:10px; opacity:0.8;">
+    Session {{ trial_number }} / {{ sessions_per_app }}
+</div>
+
 <div class="card shadow-sm">
   <div class="card-body">
     <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
