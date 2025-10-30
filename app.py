@@ -72,7 +72,17 @@ def home():
 def choose_app():
     if "user_name" not in session:
         return redirect(url_for("home"))
-    apps = list(APPS_TASKS.keys())
+    all_apps = list(APPS_TASKS.keys())
+completed = session.get("completed_apps", [])
+remaining_apps = [a for a in all_apps if a not in completed]
+
+# لو خلص كل التطبيقات → شكراً
+if not remaining_apps:
+    flash("You have completed all applications. Thank you!", "success")
+    return redirect(url_for("thanks"))
+
+apps = remaining_apps
+
     downloads = APP_DOWNLOADS
     if request.method == "POST":
         app_name = request.form.get("app_name")
@@ -176,7 +186,21 @@ def task(idx):
         flash("Finished all assigned applications. Thank you for participating!", "success")
         return redirect(url_for("thanks"))
     else:
-        flash(f"Finished {app_name}. You can pick another app.", "success")
+    # حفظ التطبيق كمكتمل
+    completed = set(session.get("completed_apps", []))
+    completed.add(app_name)
+    session["completed_apps"] = list(completed)
+
+    # تنظيف الجلسة
+    for k in ["current_app", "app_experience", "trial_number", "task_index"]:
+        session.pop(k, None)
+
+    # إذا خلص كل التطبيقات
+    if len(completed) >= len(APPS_TASKS):
+        flash("You finished all applications. Thank you!", "success")
+        return redirect(url_for("thanks"))
+    else:
+        flash(f"You finished {app_name}. Please choose the next app.", "success")
         return redirect(url_for("choose_app"))
 
         else:
