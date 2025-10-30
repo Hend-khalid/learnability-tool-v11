@@ -162,8 +162,23 @@ def task(idx):
                 flash(f"Session {session['trial_number'] - 1} finished. Starting session {session['trial_number']} for {app_name}.", "info")
                 return redirect(url_for("task", idx=0))
             else:
-                flash(f"Finished {app_name} tasks for {SESSIONS_PER_APP} sessions. You can pick another app.", "success")
-                return redirect(url_for("choose_app"))
+    # علّمي هذا التطبيق كمكتمل في جلسة المستخدم
+    completed = set(session.get("completed_apps", []))
+    completed.add(app_name)
+    session["completed_apps"] = list(completed)
+
+    # نظّفي حالة التطبيق الحالي
+    for k in ["current_app", "app_experience", "trial_number", "task_index"]:
+        session.pop(k, None)
+
+    # إذا خلّص كل التطبيقات -> صفحة الشكر، وإلا يرجع يختار
+    if len(completed) >= len(APPS_TASKS):
+        flash("Finished all assigned applications. Thank you for participating!", "success")
+        return redirect(url_for("thanks"))
+    else:
+        flash(f"Finished {app_name}. You can pick another app.", "success")
+        return redirect(url_for("choose_app"))
+
         else:
             return redirect(url_for("task", idx=next_idx))
 
