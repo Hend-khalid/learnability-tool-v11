@@ -173,9 +173,9 @@ def task(idx):
                 return redirect(url_for("task", idx=0))
             else:
     # علّمي هذا التطبيق كمكتمل في جلسة المستخدم
-    completed = set(session.get("completed_apps", []))
-    completed.add(app_name)
-    session["completed_apps"] = list(completed)
+                completed = set(session.get("completed_apps", []))
+                completed.add(app_name)
+                session["completed_apps"] = list(completed)
 
     # نظّفي حالة التطبيق الحالي
     for k in ["current_app", "app_experience", "trial_number", "task_index"]:
@@ -187,9 +187,9 @@ def task(idx):
         return redirect(url_for("thanks"))
     else:
     # حفظ التطبيق كمكتمل
-    completed = set(session.get("completed_apps", []))
-    completed.add(app_name)
-    session["completed_apps"] = list(completed)
+        completed = set(session.get("completed_apps", []))
+        completed.add(app_name)
+        session["completed_apps"] = list(completed)
 
     # تنظيف الجلسة
     for k in ["current_app", "app_experience", "trial_number", "task_index"]:
