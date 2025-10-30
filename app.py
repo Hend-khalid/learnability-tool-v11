@@ -83,7 +83,7 @@ if not remaining_apps:
 
 apps = remaining_apps
 
-    downloads = APP_DOWNLOADS
+downloads = APP_DOWNLOADS
     if request.method == "POST":
         app_name = request.form.get("app_name")
         app_experience = request.form.get("app_experience")
