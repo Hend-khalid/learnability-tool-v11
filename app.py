@@ -184,7 +184,8 @@ def task(idx):
             flash("Application completed. Please choose the next application.", "success")
             return redirect(url_for("choose_app"))
 
-    return render_template("task.html", app_name=app_name, idx=idx, total=len(tasks), task_text=tasks[idx])
+    return render_template("task.html", app_name=app_name, idx=idx, total=len(tasks), task_text=tasks[idx],trial_number=session.get("trial_number", 1),
+    sessions_per_app=SESSIONS_PER_APP)
 
 # صفحة الشكر
 @app.route("/thanks")
