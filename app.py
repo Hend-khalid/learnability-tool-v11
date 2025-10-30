@@ -166,6 +166,7 @@ def task(idx):
         # جلسة أولى؟ كرري
         if session.get("trial_number", 1) < SESSIONS_PER_APP:
             session["trial_number"] += 1
+            flash(f"Session {session['trial_number'] - 1} completed. Starting Session {session['trial_number']}.", "info")
             return redirect(url_for("task", idx=0))
 
         # خلّص التطبيق
